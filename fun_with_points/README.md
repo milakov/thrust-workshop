@@ -3,11 +3,13 @@ TL;DR
 
 Building __parallel programs__ is easy with [Thrust's](http://thrust.github.com) __power tools__ like parallel __maps__, __sorts__, and __reductions__.
 
-    $ git clone -b gtc2013 git://github.com/tmjbradley/thrust-workshop
-    $ cd thrust-workshop/fun_with_points
-    $ make
-    $ ./exercise
-    $ ./spoilers
+```bash
+$ git clone -b gtc2013 git://github.com/tmjbradley/thrust-workshop
+$ cd thrust-workshop/fun_with_points
+$ make
+$ ./exercise
+$ ./spoilers
+```
 
 Fun with Points!
 ================
