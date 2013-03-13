@@ -3,13 +3,11 @@ TL;DR
 
 Building __parallel programs__ is easy with [Thrust's](http://thrust.github.com) __power tools__ like parallel __maps__, __sorts__, and __reductions__.
 
-    $ git clone git://github.com/jaredhoberock/thrust-workshop
+    $ git clone -b gtc2013 git://github.com/tmjbradley/thrust-workshop
     $ cd thrust-workshop/fun_with_points
-    $ scons
+    $ make
     $ ./exercise
     $ ./spoilers
-
-(Requires [scons](http://www.scons.org/) and [CUDA](https://developer.nvidia.com/cuda-downloads).)
 
 Fun with Points!
 ================
@@ -50,7 +48,7 @@ At a high level, the program looks like this:
 
 Let's port this C++ program to run on the GPU using the [Thrust](http://thrust.github.com) parallel algorithms library. Since the program is already broken down into a __high level description__ using functions with names like `generate_random_points` and `count_points_in_quadrants` that operate on large __collections of data__, it'll be a breeze.
 
-To follow along with this post in [`exercise.cu`](exercise.cu), type `scons exercise` into your command line to build the program, and `./exercise` to run it. You'll need to install [CUDA](https://developer.nvidia.com/cuda-downloads) to get NVIDIA's compiler to compile `.cu` files and [SCons](http://www.scons.org/), which is the build system we'll use.
+To follow along with this post in [`exercise.cu`](exercise.cu), type `make exercise` into your command line to build the program, and `./exercise` to run it.
 
 If you get stuck, you can peek at the full solution in [`spoilers.cu`](spoilers.cu).
 
