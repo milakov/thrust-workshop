@@ -1,0 +1,1207 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>README</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+/* 
+   This document has been created with Marked.app <http://markedapp.com>, Copyright 2011 Brett Terpstra
+   Please leave this notice in place, along with any additional credits below.
+   ---------------------------------------------------------------
+   Title: GitHub
+   Author: Brett Terpstra
+   Description: Github README style. Includes theme for Pygmentized code blocks.
+*/
+html,body{color:black}*{margin:0;padding:0}body{font:13.34px helvetica,arial,freesans,clean,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.4;padding:3px;background:#fff;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}p{margin:1em 0}a{color:#4183c4;text-decoration:none}#wrapper{background-color:#fff;border:3px solid #eee!important;padding:0 30px;margin:15px}#wrapper{font-size:14px;line-height:1.6}#wrapper>*:first-child{margin-top:0!important}#wrapper>*:last-child{margin-bottom:0!important}h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1{margin:15px 0;padding-bottom:2px;font-size:24px;border-bottom:1px solid #eee}h2{margin:20px 0 10px 0;font-size:18px}h3{margin:20px 0 10px 0;padding-bottom:2px;font-size:14px;border-bottom:1px solid #ddd}h4{font-size:14px;line-height:26px;padding:18px 0 4px;font-weight:bold;text-transform:uppercase}h5{font-size:13px;line-height:26px;padding:14px 0 0;font-weight:bold;text-transform:uppercase}h6{color:#666;font-size:14px;line-height:26px;padding:18px 0 0;font-weight:normal;font-variant:italic}hr{background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;border:0 none;color:#ccc;height:4px;margin:20px 0;padding:0}#wrapper>h2:first-child,#wrapper>h1:first-child,#wrapper>h1:first-child+h2{border:0;margin:0;padding:0}#wrapper>h3:first-child,#wrapper>h4:first-child,#wrapper>h5:first-child,#wrapper>h6:first-child{margin:0;padding:0}h4+p,h5+p,h6+p{margin-top:0}li p.first{display:inline-block}ul,ol{margin:15px 0 15px 25px}ul li,ol li{margin-top:7px;margin-bottom:7px}ul li>*:last-child,ol li>*:last-child{margin-bottom:0}ul li>*:first-child,ol li>*:first-child{margin-top:0}#wrapper>ul,#wrapper>ol{margin-top:21px;margin-left:36px}dl{margin:0;padding:20px 0 0}dl dt{font-size:14px;font-weight:bold;line-height:normal;margin:0;padding:20px 0 0}dl dt:first-child{padding:0}dl dd{font-size:13px;margin:0;padding:3px 0 0}blockquote{margin:14px 0;border-left:4px solid #ddd;padding-left:11px;color:#555}table{border-collapse:collapse;margin:20px 0 0;padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#f8f8f8}table tr th,table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}img{max-width:100%;height:auto}code,tt{margin:0 2px;padding:2px 5px;white-space:nowrap;border:1px solid #ccc;background-color:#f8f8f8;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;font-size:12px}pre>code{margin:0;padding:0;white-space:pre;border:0;background:transparent;font-size:13px}.highlight pre,pre{background-color:#f8f8f8;border:1px solid #ccc;font-size:13px;line-height:19px;overflow:auto;padding:6px 10px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}#wrapper>pre,#wrapper>div.highlight{margin:10px 0 0}pre code,pre tt{background-color:transparent;border:0}#wrapper{background-color:#fff;border:1px solid #cacaca;padding:30px}.poetry pre{font-family:Georgia,Garamond,serif!important;font-style:italic;font-size:110%!important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif!important}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}@media print{body{background:#fff}img,pre,blockquote,table,figure{page-break-inside:avoid}#wrapper{background:#fff;border:0}code{background-color:#fff;color:#444!important;padding:0 .2em;border:1px solid #dedede}pre code{background-color:#fff!important;overflow:visible}pre{background:#fff}}@media screen{body.inverted,.inverted #wrapper,.inverted hr .inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt,.inverted blockquote{color:#eee!important;border-color:#555}.inverted td,.inverted th{background:#333}.inverted pre,.inverted code,.inverted tt{background:#444!important}.inverted h2{border-color:#555}.inverted hr{border-color:#777;border-width:1px!important}::selection{background:rgba(157,193,200,.5)}h1::selection{background-color:rgba(45,156,208,.3)}h2::selection{background-color:rgba(90,182,224,.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,.3)}code::selection{background-color:rgba(0,0,0,.7);color:#eee}code span::selection{background-color:rgba(0,0,0,.7)!important;color:#eee!important}a::selection{background-color:rgba(255,230,102,.2)}.inverted a::selection{background-color:rgba(255,230,102,.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,.5)}.inverted{background:#0b2531}.inverted #wrapper,.inverted{background:rgba(37,42,42,1)}.inverted a{color:rgba(172,209,213,1)}}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k{font-weight:bold}.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#800080;font-weight:bold}.highlight .gt{color:#a00}.highlight .kc{font-weight:bold}.highlight .kd{font-weight:bold}.highlight .kn{font-weight:bold}.highlight .kp{font-weight:bold}.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086b3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne{color:#900;font-weight:bold}.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf{color:#099}.highlight .mh{color:#099}.highlight .mi{color:#099}.highlight .mo{color:#099}.highlight .sb{color:#d14}.highlight .sc{color:#d14}.highlight .sd{color:#d14}.highlight .s2{color:#d14}.highlight .se{color:#d14}.highlight .sh{color:#d14}.highlight .si{color:#d14}.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc{color:#008080}.highlight .vg{color:#008080}.highlight .vi{color:#008080}.highlight .il{color:#099}.highlight .gc{color:#999;background-color:#eaf2f5}.type-csharp .highlight .k{color:#00F}.type-csharp .highlight .kt{color:#00F}.type-csharp .highlight .nf{color:#000;font-weight:normal}.type-csharp .highlight .nc{color:#2b91af}.type-csharp .highlight .nn{color:#000}.type-csharp .highlight .s{color:#a31515}.type-csharp .highlight .sc{color:#a31515}/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+pre code {
+  display: block; padding: 0.5em;
+  color: #000;
+  background: #f8f8ff
+}
+
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+  color: #998;
+  font-style: italic
+}
+
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .lisp .title,
+pre .subst {
+  color: #000;
+  font-weight: bold
+}
+
+pre .ruby .keyword {
+  font-weight: normal
+}
+
+pre .number,
+pre .hexcolor {
+  color: #40a070
+}
+
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+  color: #d14
+}
+
+pre .title,
+pre .id {
+  color: #900;
+  font-weight: bold
+}
+
+pre .javascript .title,
+pre .lisp .title,
+pre .subst {
+  font-weight: normal
+}
+
+pre .class .title,
+pre .haskell .label,
+pre .tex .command {
+  color: #458;
+  font-weight: bold
+}
+
+pre .class .params {
+	color: #000;
+}
+
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+  color: #000080;
+  font-weight: normal
+}
+
+pre .attribute,
+pre .variable,
+pre .instancevar,
+pre .lisp .body {
+  color: #008080
+}
+
+pre .regexp {
+  color: #009926
+}
+
+pre .class {
+  color: #458;
+  font-weight: bold
+}
+
+pre .symbol,
+pre .ruby .symbol .string,
+pre .ruby .symbol .keyword,
+pre .ruby .symbol .keymethods,
+pre .lisp .keyword,
+pre .tex .special,
+pre .input_number {
+  color: #0086b3
+}
+
+pre .ruby .identifier .keyword,
+pre .ruby .identifier .keymethods {
+  color: #0086b3;
+}
+
+pre .ruby .constant {
+  color: #008080;
+}
+
+pre .builtin,
+pre .built_in,
+pre .lisp .title {
+  color: #0086b3
+}
+
+pre .preprocessor,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+  color: #999;
+  font-weight: bold
+}
+
+pre .deletion {
+  background: #fdd
+}
+
+pre .addition {
+  background: #dfd
+}
+
+pre .diff .change {
+  background: #0086b3
+}
+
+pre .chunk {
+  color: #aaa
+}
+
+pre .tex .formula {
+  opacity: 0.5;
+}
+</style>
+
+</head>
+<body class="normal">
+  <div id="wrapper">
+      <h1 id="morepoints">More Points</h1>
+
+<p>Now that we&#8217;ve had our <a href="../fun_with_points">fun with points</a>, it&#8217;s time to get
+serious. Let&#8217;s use Thrust to get some work done by organizing our points into a
+spatial data structure. In this post, we&#8217;ll become familiar with algorithms
+such as <code>exclusive_scan</code> and <code>lower_bound</code> to build sophisticated data
+structures in parallel. Just like before, we&#8217;ll structure the code such that it
+can run anywhere we have parallel resources.</p>
+
+<p>In <a href="exercise.cu">exercise.cu</a>, we have a C++ program that generates some random
+two-dimensional points, finds the bounding box of those points, and then
+iteratively subdivides that box to build a <a href="http://en.wikipedia.org/wiki/Quadtree">hierarchical tree structure</a>. We
+could use this kind of data structure later for performing spatial queries like
+<a href="http://en.wikipedia.org/wiki/Collision_detection">detecting collisions</a>, or
+<a href="http://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm">finding nearby neighbors</a>,
+but for now we&#8217;ll keep it simple and concentrate on just building the thing.</p>
+
+<p>At a high level, the program looks like this:</p>
+
+<pre><code>int main()
+{
+  const int num_points = 10000000;
+  int max_level = XXX;
+  int threshold = YYY;
+
+  std::vector&lt;float2&gt; points(num_points);
+  generate_random_points(points);
+
+  bbox bounds = compute_bounding_box(points);
+
+  std::vector&lt;int&gt; tags(num_points);
+  compute_tags(points, bounds, max_level, tags);
+
+  std::vector&lt;int&gt; indices(num_points);
+  sort_points_by_tag(tags, indices);
+
+  std::vector&lt;int&gt; nodes;
+  std::vector&lt;int2&gt; leaves;
+  build_tree(tags, bounds, max_level, threshold, nodes, leaves);
+}
+</code></pre>
+
+<p>We&#8217;ll describe what&#8217;s going on with the <code>tags</code> later.</p>
+
+<p>Our tree data structure is just an array of nodes and a list of leaves. Each leaf indexes a contiguous piece of the <code>indices</code> array.</p>
+
+<p>The implementation of <code>build_tree</code> function is fairly complex. We&#8217;ll peek inside later.</p>
+
+<h1 id="massagingthedata">Massaging the Data</h1>
+
+<p>Before we can dive into building our tree, we first need to generate our input and massage the data into a format which makes tree construction easy.</p>
+
+<h2 id="generatingthepoints">Generating the Points</h2>
+
+<p>First, we&#8217;ll generate some random 2D points in parallel just like we did in the <a href="../fun_with_points"><code>fun_with_points</code></a> example:</p>
+
+<pre><code>std::vector&lt;float2&gt; points(num_points);
+
+generate_random_points(points);
+</code></pre>
+
+<p>Inside of <code>generate_random_points</code> is just a call to <code>thrust::tabulate</code> which produces random points.</p>
+
+<p>In the sequential version of the code we keep our <code>points</code> data in a <code>std::vector</code>. Now that we know about the magic of <code>thrust::device_vector</code>, we&#8217;ll port instances of <code>std::vector</code> to <code>thrust::device_vector</code> as we go along.</p>
+
+<h2 id="boundingthepoints">Bounding the Points</h2>
+
+<p>The next thing we do is compute a <a href="http://en.wikipedia.org/wiki/Minimum_bounding_box">&#8220;bounding box&#8221;</a> for our points. If you&#8217;re unfamiliar with the idea, a bounding box is a box which contains or &#8220;bounds&#8221; all of our points. You can think of it as describing the geometric boundaries of our problem set.</p>
+
+<p>For our purposes, a <code>bbox</code> is just two points which specify the coordinates of the extremal corners of the box along the two coordinate axes x and y:</p>
+
+<pre><code>struct bbox
+{
+  float xmin, xmax;
+  float ymin, ymax;
+
+  // initialize empty box
+  inline __host__ __device__
+  bbox() : xmin(FLT_MAX), xmax(-FLT_MAX), ymin(FLT_MAX), ymax(-FLT_MAX)
+  {}
+
+  // initialize a box containing a single point
+  inline __host__ __device__
+  bbox(const float2 &amp;p) : xmin(p.x), xmax(p.x), ymin(p.y), ymax(p.y)
+  {}
+};
+</code></pre>
+
+<p>It&#8217;s defined in <a href="util.h"><code>util.h</code></a> in the source.</p>
+
+<p>In order to compute a single box which is large enough to contain all of our points, we need to inspect them all and <strong>reduce</strong> them into a single value &#8211; the box.</p>
+
+<p>Here&#8217;s what the sequential code looks like:</p>
+
+<pre><code>// start with an empty box
+bbox bounds;
+
+// incrementally enlarge the box to include each point
+for(int i = 0; i &lt; num_points; ++i)
+{
+  float2 p = points[i];
+  if(p.x &lt; bounds.xmin) bounds.xmin = p.x;
+  if(p.x &gt; bounds.xmax) bounds.xmax = p.x;
+  if(p.y &lt; bounds.ymin) bounds.ymin = p.y;
+  if(p.y &gt; bounds.ymax) bounds.ymax = p.y;
+}
+</code></pre>
+
+<p>We just loop through the points and make sure the box is large enough to contain each one. If the box isn&#8217;t large enough along a particular dimension, we extend it such that it is just large enough to contain the point.</p>
+
+<p>At first glance, it may seem difficult to parallelize this operation because each iteration incrementally builds off of the last one. In fact, it&#8217;s possible to cast this operation as a <strong>reduction</strong>.</p>
+
+<p>In the <a href="../fun_with_points"><code>fun_with_points</code></a> example, we used <code>thrust::reduce</code> to compute the average of a collection of points. Here, the result was the same type as the input &#8211; the average of a collection of points is still a point.</p>
+
+<p>In this case, we&#8217;d like to compute a result (a <code>bbox</code>) which is a different type than the input (a collection of <code>float2</code>s). That&#8217;s okay &#8211; as long as the type of the input is convertible to the result (note the second constructor of <code>bbox</code>) <code>thrust::reduce</code> will make it work.</p>
+
+<p>To implement this bounding box reduction, we&#8217;ll introduce a functor which merges two <code>bbox</code>s together as the fundamental reduction step. The resulting <code>bbox</code> is large enough to hold the two inputs:</p>
+
+<pre><code>struct merge_boxes
+{
+  inline __host__ __device__
+  bbox operator()(const bbox &amp;a, const bbox &amp;b) const
+  {
+    bbox result;
+    result.xmin = min(a.xmin, b.xmin);
+    result.xmax = max(a.xmax, b.xmax);
+    result.ymin = min(a.ymin, b.ymin);
+    result.ymax = max(a.ymax, b.ymax);
+    return result;
+  }
+};
+</code></pre>
+
+<p>Internally, the way the reduction will work is to create, for each point, a single <code>bbox</code> which will bound only that point. Then, the reduction will merge <code>bbox</code>s in pairs until finally a single one which bounds everything results:</p>
+
+<pre><code>bbox compute_bounding_box(const thrust::device_vector&lt;float2&gt; &amp;points)
+{
+  // we pass an empty bounding box for thrust::reduce's init parameter
+  bbox empty;
+  return thrust::reduce(points.begin(), points.end(), empty, merge_bboxes());
+}
+</code></pre>
+
+<h2 id="linearizingthepoints">Linearizing the Points</h2>
+
+<p>The next step in preparing our data for tree construction is to augment its representation. The basic idea behind the tree construction process is to pose it as a spatial sorting problem. But sorts are one dimensional and we have two dimensional data. What does it mean to sort 2D points?</p>
+
+<p>Since we want to organize our points spatially, we&#8217;d like a sorting solution which preserves spatial locality. In other words, we want points that are nearby in 2D to be near each other in the one dimensional <code>points</code> array.</p>
+
+<p>This is actually a whole lot easier than it sounds. The basic idea is to &#8220;tag&#8221; each point with its <a href="http://en.wikipedia.org/wiki/Morton_code">index</a> along a <a href="http://en.wikipedia.org/wiki/Space_filling_curve">space-filling curve</a>.</p>
+
+<p>It turns out that points with nearby tags are also nearby in 2D! That means if we sort our collection of <code>points</code> by their <code>tags</code>, we&#8217;ll order them in a way that encourages spatial locality which will be important to the tree building process later.</p>
+
+<p>The sequential code is pretty simple. It just associates with each point a tag:</p>
+
+<pre><code>std::vector&lt;int&gt; tags(points.size());
+</code></pre>
+
+<p>and computes them with the <code>compute_tags</code> function:</p>
+
+<pre><code>void compute_tags(const std::vector&lt;float2&gt; &amp;points,
+                  const bbox &amp;bounds,
+                  int max_level,
+                  std::vector&lt;int&gt; &amp;tags)
+{
+  for(int i = 0; i &lt; points.size(); ++i)
+  {
+    float2 p = points[i];
+    tags[i] - point_to_tag(p, bounds, max_level);
+  }
+}
+</code></pre>
+
+<p>The <code>point_to_tag</code> computation takes a point <code>p</code>, the <code>bounds</code> of the entire collection of <code>points</code>, and the index of the tree&#8217;s <code>max_level</code> and computes the point&#8217;s spatial code. If you&#8217;re interested in the details, you can peek inside <a href="util.h"><code>util.h</code></a> where it&#8217;s defined.</p>
+
+<p>This operation looks a lot like the point classification problem from the <a href="../fun_with_points"><code>fun_with_points</code></a> exercise. We know that we can parallelize embarrassingly parallel operations like these with <code>thrust::transform</code>:</p>
+
+<pre><code>struct classify_point
+{
+  bbox box;
+  int max_level;
+
+  classify_point(const bbox &amp;bounds, int max_level) :
+    box(bounds),
+    max_level(max_level)
+  {}
+
+  inline __device__ __host__
+  int operator()(const float2 &amp;p)
+  {
+    return point_to_tag(p, box, max_level);
+  }
+};
+
+void compute_tags(const thrust::device_vector&lt;float2&gt; &amp;points,
+                  const bbox &amp;bounds,
+                  std::vector&lt;int&gt; &amp;tags)
+{
+  thrust::transform(points.begin(), points.end(),
+                    tags.begin(),
+                    classify_point(bounds, max_level));
+}
+</code></pre>
+
+<p>The only thing we need to do is introduce the <code>classify_point</code> functor whose job it is to call the <code>point_to_tag</code> function.</p>
+
+<h2 id="sortingbytag">Sorting by Tag</h2>
+
+<p>Now that each point has a spatial <code>tag</code>, we can organize them spatially just by sorting the <code>points</code> by their <code>tags</code>.</p>
+
+<p>Since sorting the <code>points</code> directly would destroy their original order, we&#8217;ll introduce one level of indirection and sort their <code>indices</code> within the list instead.</p>
+
+<p>The sequential CPU code does it this way:</p>
+
+<pre><code>struct compare_tags
+{
+  template &lt;typename Pair&gt;
+  inline bool operator()(const Pair &amp;p0, const Pair &amp;p1) const
+  {
+    return p0.first &lt; p1.first;
+  }
+};
+
+void sort_points_by_tag(std::vector&lt;int&gt; &amp;tags, std::vector&lt;int&gt; &amp;indices)
+{
+  // introduce a temporary array of pairs for sorting purposes
+  std::vector&lt;std::pair&lt;int,int&gt; &gt; tag_index_pairs(num_points);
+  for(int i = 0; i &lt; num_points; ++i)
+  {
+    tag_index_pairs[i].first = tags[i];
+    tag_index_pairs[i].second = i;
+  }
+
+  std::sort(tag_index_pairs.begin(), tag_index_pairs.end(), compare_tags());
+
+  // copy sorted data back into input arrays
+  for(int i = 0; i &lt; num_points; ++i)
+  {
+    tags[i]    = tag_index_pairs[i].first;
+    indices[i] = tag_index_pairs[i].second;
+  }
+}
+</code></pre>
+
+<p>Which is a pretty roundabout way of coaxing a key-value sort out of <code>std::sort</code>. With Thrust we can do it in parallel with just a call to <code>thrust::sort_by_key</code>:</p>
+
+<pre><code>void sort_points_by_tag(thrust::device_vector&lt;int&gt; &amp;tags, thrust::device_vector&lt;int&gt; &amp;indices)
+{
+  thrust::sequence(indices.begin(), indices.end());
+  thrust::sort_by_key(tags.begin(), tags.end(), indices.begin());
+}
+</code></pre>
+
+<h1 id="buildingthetree">Building the Tree</h1>
+
+<p>Now that we&#8217;ve got our points nice and organized, it&#8217;s time to build the tree! We&#8217;ll build each level of the tree one by one, and building each level requires a series of steps.</p>
+
+<p>Here&#8217;s the high-level overview of the process:</p>
+
+<pre><code>void build_tree(const std::vector&lt;int&gt; &amp;tags,
+                const bbox &amp;bounds,
+                int max_level,
+                int threshold,
+                std::vector&lt;int&gt; &amp;nodes,
+                std::vector&lt;int2&gt; &amp;leaves)
+{
+  std::vector&lt;int&gt; active_nodes(1,0);
+
+  // build the tree one level at a time, starting at the root
+  for(int level = 1; !active_nodes.empty() &amp;&amp; level &lt;= max_level; ++level)
+  {
+    // each node has four children since this is a quad tree
+    std::vector&lt;int&gt; children(4 * active_nodes.size());
+
+    compute_child_tag_masks(active_nodes, level, max_level, children);
+
+    std::vector&lt;int&gt; lower_bounds(children.size());
+    std::vector&lt;int&gt; upper_bounds(children.size());
+    find_child_bounds(tags, children, level, max_level, lower_bounds, upper_bounds);
+
+    // mark each child as either empty, an interior node, or a leaf
+    std::vector&lt;int&gt; child_node_kind(children.size(), 0);
+    classify_children(children, lower_bounds, upper_bounds, level, max_level, threshold, child_node_kind);
+
+    // enumerate the nodes and leaves at this level
+    std::vector&lt;int&gt; nodes_on_this_level(child_node_kind.size());
+    std::vector&lt;int&gt; leaves_on_this_level(child_node_kind.size());
+
+    std::pair&lt;int,int&gt; num_nodes_and_leaves_on_this_level =
+      enumerate_nodes_and_leaves(child_node_kind, nodes_on_this_level, leaves_on_this_level);
+
+    create_child_nodes(child_node_kind, nodes_on_this_level, leaves_on_this_level, leaves.size(), nodes);
+
+    create_leaves(child_node_kind, leaves_on_this_level, lower_bounds, upper_bounds, num_nodes_and_leaves_on_this_level.second, leaves);
+
+    activate_nodes_for_next_level(children, child_node_kind, active_nodes);
+
+    activate_nodes_for_next_level(children, child_node_kind, num_nodes_and_leaves_on_this_level.first, active_nodes);
+  }
+}
+</code></pre>
+
+<p>You can see that it takes as input the information we computed in the prior
+steps (<code>tags</code>, <code>bounds</code>) and some tweakable knobs (<code>max_level</code>, <code>threshold</code>)
+and produces two arrays: <code>nodes</code> and <code>leaves</code>.</p>
+
+<p>Each element of the <code>nodes</code> array is an index which identifies whether the node is empty, or whether it
+refers to a terminal leaf, or an interior node. When it is a leaf, the index encodes where in the <code>leaves</code> array it lives.
+When it is an interior node, it stores the index of its first child so that we can find it later when we traverse the tree.</p>
+
+<p>As we build the tree level by level, we&#8217;ll keep a list of &#8220;active&#8221; nodes. These
+are the tags of the nodes on the current level. In each iteration, our job is
+to search for and construct nodes for their children.</p>
+
+<p>We start out at the root. The root of the tree has a tag of <code>0</code>:</p>
+
+<pre><code>std::vector&lt;int&gt; active_nodes(1,0);
+</code></pre>
+
+<h2 id="maskingoffthesearch">Masking off the Search</h2>
+
+<p>In order to search through the <code>tags</code> array for the <code>active_nodes</code>&#8217;s children,
+we need to &#8220;mask off&#8221; the search area of interest. We do that by taking
+each tag in the <code>active_nodes</code> array, and producing a mask. Geometrically,
+this tag mask corresponds to a quarter of the box spanned by the active
+node. Since there are four quarters of the box, we create room for four <code>children</code> for each of the <code>active_nodes</code>, and call <code>compute_child_tag_masks</code>:</p>
+
+<pre><code>std::vector&lt;int&gt; children(4 * active_nodes.size());
+compute_child_tag_masks(active_nodes, level, max_level, children);
+</code></pre>
+
+<p>Inside, <code>compute_child_tag_masks</code> looks like this:</p>
+
+<pre><code>void compute_child_tag_masks(const std::vector&lt;int&gt; &amp;active_nodes,
+                             int level,
+                             int max_level,
+                             std::vector&lt;int&gt; &amp;children)
+{
+  for (int i = 0 ; i &lt; active_nodes.size() ; ++i)
+  {
+    int tag = active_nodes[i];
+    children[4*i+0] = child_tag_mask(tag, 0, level, max_level);
+    children[4*i+1] = child_tag_mask(tag, 1, level, max_level);
+    children[4*i+2] = child_tag_mask(tag, 2, level, max_level);
+    children[4*i+3] = child_tag_mask(tag, 3, level, max_level);
+  }
+}
+</code></pre>
+
+<p>For each of the <code>active_nodes</code>, we get its <code>tag</code> and call the helper function
+<code>child_tag_mask</code> to compute a mask for each one of its four <code>children</code>. To
+parallelize this operation with Thrust, we&#8217;ll need to find a way to &#8220;expand&#8221; a collection
+of items, as the output (<code>children</code>) is four times the size of the input
+(<code>active_nodes</code>). In other words, it won&#8217;t be a simple call to <code>thrust::transform</code>.</p>
+
+<p>Instead of parallelizing over the elements of the input array, an alternative
+approach could parallelize over the output. For each output element in
+<code>children</code>, we could look up the corresponding input element in <code>active_nodes</code>.
+If we know the index <code>idx</code> of each output element from <code>children</code>, we can get
+the index of the corresponding input element easily &#8211; it&#8217;s just <code>idx/4</code>.
+Luckily, we know how to generate indices for each output element &#8211;
+<code>thrust::tabulate</code> does this for us. Since the interface of <code>thrust::tabulate</code>
+only takes a single output range, we&#8217;ll have to go &#8220;out of band&#8221; to get the tag
+of each child&#8217;s parent node.</p>
+
+<p>Let&#8217;s look at the whole function, which we&#8217;ve ported to use <code>thrust::device_vector</code>:</p>
+
+<pre><code>struct child_index_to_tag_mask
+{
+  int level, max_level;
+  thrust::device_ptr&lt;const int&gt; nodes;
+
+  child_index_to_tag_mask(int lvl, int max_lvl, thrust::device_ptr&lt;const int&gt; nodes) : level(lvl), max_level(max_lvl), nodes(nodes) {}
+
+  inline __device__ __host__
+  int operator()(int idx) const
+  {
+    int tag = nodes[idx/4];
+    int which_child = (idx&amp;3);
+    return child_tag_mask(tag, which_child, level, max_level);
+  }
+};
+
+void compute_child_tag_masks(const thrust::device_vector&lt;int&gt; &amp;active_nodes,
+                             int level,
+                             int max_level,
+                             thrust::device_vector&lt;int&gt; &amp;children)
+{
+  thrust::tabulate(children.begin(), children.end(),
+                   child_index_to_tag_mask(level, max_level, active_nodes.data()));
+}
+</code></pre>
+
+<p>We call <code>thrust::tabulate</code> with <code>children</code> as our output array and use
+<code>child_index_to_tag_mask</code> as our functor. In addition to <code>level</code>, and
+<code>max_level</code>, which are needed to call the helper function <code>child_tag_mask</code>
+inside the functor, we also use the special member function
+<code>active_nodes.data()</code> to pass a pointer to the <code>active_nodes</code> array into our
+functor. This is how we go out of band into the <code>active_nodes</code> array &#8211; even
+though <code>thrust::tabulate</code> doesn&#8217;t know about <code>active_nodes</code>, we can still use
+it as input!</p>
+
+<p><code>active_nodes.data()</code> returns a special type of pointer called a
+<code>thrust::device_ptr</code> which keeps track of the fact that the data it points to
+lives on the GPU. This makes accessing data on the GPU easy.</p>
+
+<p>Inside of <code>child_index_to_tag_mask</code>, after receiving the <code>idx</code> of the child, we
+first look into the <code>nodes</code> array to find the <code>tag</code> of the parent node. Next,
+we use <code>idx</code> again to figure out which child of the node (0,1,2, or 3)
+we&#8217;re computing. Finally, we&#8217;re able to call <code>child_index_to_tag_mask</code> just
+like the sequential version of the code.</p>
+
+<h2 id="searchingforchildren">Searching for Children</h2>
+
+<p>Now that we know where to look, we can search for the list of tags spanned or bound by each active node&#8217;s children. We&#8217;ll
+represent the lists as a couple of arrays:</p>
+
+<pre><code>std::vector&lt;int&gt; lower_bounds(children.size());
+std::vector&lt;int&gt; upper_bounds(children.size());
+</code></pre>
+
+<p>For each element of <code>children</code>, <code>lower_bounds</code> stores the index of the first
+tag it spans inside of <code>tags</code>. Likewise, <code>upper_bounds</code> stores the index of the
+tag one past the last spanned. In other words, for each element of <code>children</code>,
+we&#8217;ll have the boundaries of a contiguous span of elements inside <code>tags</code>.</p>
+
+<p>Inside of <code>find_child_bounds</code>, we do the search:</p>
+
+<pre><code>void find_child_bounds(const std::vector&lt;int&gt; &amp;tags,
+                       const std::vector&lt;int&gt; &amp;children,
+                       int level,
+                       int max_level,
+                       std::vector&lt;int&gt; &amp;lower_bounds,
+                       std::vector&lt;int&gt; &amp;upper_bounds)
+{
+  int length = (1 &lt;&lt; (max_level - level) * 2) - 1;
+  for (int i = 0 ; i &lt; children.size() ; ++i)
+  {
+    lower_bounds[i] = std::lower_bound(tags.begin(), tags.end(), children[i]) - tags.begin();
+
+    upper_bounds[i] = std::upper_bound(tags.begin(), tags.end(), children[i] + length) - tags.begin();
+  }
+}
+</code></pre>
+
+<p>For each mask element of <code>children</code>, we do a binary search in the <code>tags</code> array to discover the indices of the tags it spans.
+In the C++ standard library, these searches are implemented with <code>std::lower_bound</code> and <code>std::upper_bound</code>.</p>
+
+<p>Parallelizing this operation is pretty simple, as Thrust provides &#8220;vectorized&#8221; versions of <code>lower_bound</code> and <code>upper_bound</code>. We split the <code>for</code> loop into two separate operations:</p>
+
+<pre><code>void find_child_bounds(const thrust::device_vector&lt;int&gt; &amp;tags,
+                       const thrust::device_vector&lt;int&gt; &amp;children,
+                       int level,
+                       int max_level,
+                       thrust::device_vector&lt;int&gt; &amp;lower_bounds,
+                       thrust::device_vector&lt;int&gt; &amp;upper_bounds)
+{
+  thrust::lower_bound(tags.begin(),
+                      tags.end(),
+                      children.begin(),
+                      children.end(),
+                      lower_bounds.begin());
+
+  int length = (1 &lt;&lt; (max_level - level) * 2) - 1;
+
+  using namespace thrust::placeholders;
+
+  thrust::upper_bound(tags.begin(),
+                      tags.end(),
+                      thrust::make_transform_iterator(children.begin(), _1 + length),
+                      thrust::make_transform_iterator(children.end(), _1 + length),
+                      upper_bounds.begin());
+}
+</code></pre>
+
+<p>First, we call <code>thrust::lower_bound</code> to search the collection of <code>tags</code> for each element in the <code>children</code> collection.</p>
+
+<p>Next, to compute <code>upper_bounds</code>, we call <code>thrust::upper_bound</code> similarly. This
+time, to incorporate <code>length</code> into each element of <code>children</code>, we create a
+<code>transform_iterator</code> using a placeholder expression.</p>
+
+<h2 id="classification">Classification</h2>
+
+<p>Now that we know for each child the sublist of of <code>tags</code> it spans, we can
+classify whether each child is empty, an interior node, or a terminal leaf of
+our tree. For each element of the <code>children</code> array, we&#8217;ll store an <code>int</code> to keep track of its kind:</p>
+
+<pre><code>std::vector&lt;int&gt; child_node_kind(children.size(), 0);
+classify_children(lower_bounds, upper_bounds, level, max_level, threshold, child_node_kind);
+</code></pre>
+
+<p>Classifying each child is simple, as it only depends on the number of tag elements each
+child spans. The sequential code is just another <code>for</code> loop:</p>
+
+<pre><code>void classify_children(const std::vector&lt;int&gt; &amp;lower_bounds,
+                       const std::vector&lt;int&gt; &amp;upper_bounds,
+                       int level,
+                       int max_level,
+                       int threshold,
+                       std::vector&lt;int&gt; &amp;child_node_kind)
+{
+  for(int i = 0; i &lt; upper_bounds.size(); ++i)
+  {
+    int count = upper_bounds[i] - lower_bounds[i];
+    if(count == 0)
+    {
+      child_node_kind[i] = EMPTY;
+    }
+    else if(level == max_level || count &lt; threshold)
+    {
+      child_node_kind[i] = LEAF;
+    }
+    else
+    {
+      child_node_kind[i] = NODE;
+    }
+  }
+}
+</code></pre>
+
+<p>The number of tags (<code>count</code>) spanned by each child <code>i</code> is just the difference between that child&#8217;s upper and lower bounds.
+An <code>EMPTY</code> child corresponds to a <code>count</code> of zero. Then, depending on the <code>threshold</code>, a child is either a <code>NODE</code> or a <code>LEAF</code>.</p>
+
+<p>We&#8217;ve parallelized so many of this kind of loop that it should be second nature by now. It&#8217;s just <code>thrust::transform</code>:</p>
+
+<pre><code>struct classify_node
+{
+  int threshold;
+  int last_level;
+
+  classify_node(int threshold, int last_level) : threshold(threshold), last_level(last_level) {}
+
+  inline __device__ __host__
+  int operator()(int lower_bound, int upper_bound) const
+  {
+    int count = upper_bound - lower_bound;
+    if (count == 0)
+    {
+      return EMPTY;
+    }
+    else if (last_level || count &lt; threshold)
+    {
+      return LEAF;
+    }
+    else
+    {
+      return NODE;
+    }
+  }
+};
+
+void classify_children(const thrust::device_vector&lt;int&gt; &amp;lower_bounds,
+                       const thrust::device_vector&lt;int&gt; &amp;upper_bounds,
+                       int level,
+                       int max_level,
+                       int threshold,
+                       thrust::device_vector&lt;int&gt; &amp;child_node_kind)
+{
+  thrust::transform(lower_bounds.begin(), lower_bounds.end(),
+                    upper_bounds.begin(),
+                    child_node_kind.begin(),
+                    classify_node(threshold, level == max_level));
+}
+</code></pre>
+
+<h2 id="rankingnodesandleaves">Ranking Nodes and Leaves</h2>
+
+<p>Now that we&#8217;ve classified each of this level&#8217;s children as either nodes or
+leaves, we need to know for each node which node that it is. In other words, we
+need to label the first node with a <code>0</code>, the second node with a <code>1</code>, the third
+with a <code>3</code>, and so on. We also need to do the same thing for leaves. &#8220;Ranking&#8221;
+each child in this way will tell us where we need to put it in our final data
+structure.</p>
+
+<p>We&#8217;ll introduce two new arrays to store these ranks and also tally total the number of nodes and leaves on this level:</p>
+
+<pre><code>std::vector&lt;int&gt; nodes_on_this_level(child_node_kind.size());
+std::vector&lt;int&gt; leaves_on_this_leveL(child_node_kind.size());
+
+std::pair&lt;int,int&gt; num_nodes_and_leaves_on_this_level =
+  enumerate_nodes_and_leaves(child_node_kind, nodes_on_this_level, leaves_on_this_level);
+</code></pre>
+
+<p>Let&#8217;s look at the sequential code:</p>
+
+<pre><code>std::pair&lt;int,int&gt; enumerate_nodes_and_leaves(const std::vector&lt;int&gt; &amp;child_node_kind,
+                                              std::vector&lt;int&gt; &amp;nodes_on_this_level,
+                                              std::vector&lt;int&gt; &amp;leaves_on_this_level)
+{
+  for(int i = 0, prefix_sum = 0; i &lt; child_node_kind.size(); ++i)
+  {
+    nodes_on_this_level[i] = prefix_sum;
+    if(child_node_kind[i] == NODE)
+    {
+      ++prefix_sum;
+    }
+  }
+
+  for(int i = 0, prefix_sum = 0; i &lt; child_node_kind.size(); ++i)
+  {
+    leaves_on_this_level[i] = prefix_sum;
+    if(child_node_kind[i] == LEAF)
+    {
+      ++prefix_sum;
+    }
+  }
+
+  std::pair&lt;int,int&gt; num_nodes_and_leaves_on_this_level;
+
+  num_nodes_and_leaves_on_this_level.first = nodes_on_this_level.back() + (child_node_kind.back() == NODE ? 1 : 0);
+  num_nodes_and_leaves_on_this_level.second = leaves_on_this_level.back() + (child_node_kind.back() == LEAF ? 1 : 0);
+
+  return num_nodes_and_leaves_on_this_level;
+}
+</code></pre>
+
+<p>The sequential version of the code loops through the <code>child_node_kind</code> array
+twice. Each time it encounters a <code>NODE</code> it increments a counter called
+<code>prefix_sum</code>. In each iteration, the counter gets stored to the corresponding
+element of <code>nodes_on_this_level</code>. The same thing happens for the leaves. The
+result is that the <code>nodes_on_this_level</code> array contains an ascending sequence
+of integers, starting at zero. The locations where the value of the sequence
+increments are at locations in <code>child_node_kind</code> which correspond to a node.</p>
+
+<p>This means that the last element of the <code>nodes_on_this_level</code> array is one less
+than the total number of interior nodes. To find the total, we take this number
+and add one if the last element of <code>child_node_kind</code> corresponds to a <code>NODE</code>
+(and do the same computation for the leaves).</p>
+
+<p>This kind of loop seems really hard to parallelize because the value of our
+counter depends on elements of <code>child_node_kind</code> we encountered in the past.
+On the other hand, the reduction loop from the
+<a href="../fun_with_points"><code>fun_with_points</code></a> example seemed the same way at first.
+Maybe there&#8217;s a way to compute several sums in parallel?</p>
+
+<p>It turns out that the operation that this <code>for</code> loop implements is called a
+&#8220;prefix sum&#8221; (hence the name of our counter) or a &#8220;scan&#8221;. A scan is kind of
+like a reduction, but instead of producing just a single result, we associate a
+result with each input element which is the sum of elements encountered so far.
+Thrust calls this particular flavor an &#8220;exclusive scan&#8221; because each input is
+excluded from its corresponding sum. That is, the counter is updated <em>after</em>
+the corresponding sum is written to the output.</p>
+
+<p>Let&#8217;s look at how to use <code>thrust::transform_exclusive_scan</code> to parallelize these prefix sums:</p>
+
+<pre><code>std::pair&lt;int,int&gt; enumerate_nodes_and_leaves(const thrust::device_vector&lt;int&gt; &amp;child_node_kind,
+                                              thrust::device_vector&lt;int&gt; &amp;nodes_on_this_level,
+                                              thrust::device_vector&lt;int&gt; &amp;leaves_on_this_level)
+{
+  thrust::transform_exclusive_scan(child_node_kind.begin(), 
+                                   child_node_kind.end(), 
+                                   nodes_on_this_level.begin(), 
+                                   is_a&lt;NODE&gt;(), 
+                                   0, 
+                                   thrust::plus&lt;int&gt;());
+
+  thrust::transform_exclusive_scan(child_node_kind.begin(), 
+                                   child_node_kind.end(), 
+                                   leaves_on_this_level.begin(), 
+                                   is_a&lt;LEAF&gt;(), 
+                                   0, 
+                                   thrust::plus&lt;int&gt;());
+
+  std::pair&lt;int,int&gt; num_nodes_and_leaves_on_this_level;
+
+  num_nodes_and_leaves_on_this_level.first = nodes_on_this_level.back() + (child_node_kind.back() == NODE ? 1 : 0);
+  num_nodes_and_leaves_on_this_level.second = leaves_on_this_level.back() + (child_node_kind.back() == LEAF ? 1 : 0);
+
+  return num_nodes_and_leaves_on_this_level;
+}
+</code></pre>
+
+<p>You can see that the two loops have collasped into high level algorithm calls, but the code which computes the total sums at the end is unchanged.
+Let&#8217;s decipher what&#8217;s going on inside one of these calls to <code>thrust::transform_exclusive_scan</code>:</p>
+
+<pre><code>thrust::transform_exclusive_scan(child_node_kind.begin(),
+                                 child_node_kind.end(),
+                                 nodes_on_this_level.begin(),
+                                 is_a&lt;NODE&gt;(),
+                                 0,
+                                 thrust::plus&lt;int&gt;());
+</code></pre>
+
+<p>First, we pass the input range, this is just <code>child_node_kind</code>. We&#8217;ll store the
+scan to <code>nodes_on_this_level</code>, which comes next. The next argument,
+<code>is_a&lt;NODE&gt;()</code>, is a functor. Whenever the scan encounters an element from
+<code>child_node_kind</code> which is a <code>NODE</code>, this functor will transform the input
+element into <code>true</code>. Otherwise, it will return <code>false</code>. Next, we tell the
+scan that we want to start counting from <code>0</code>. Finally, we tell the scan
+how to sum two results from <code>is_a&lt;NODE&gt;()</code> together: just do an integer <code>plus</code> operation. The
+second call to <code>transform_exclusive_scan</code> for leaves is interpreted
+similarly.</p>
+
+<h2 id="creatingthechildnodes">Creating the Child Nodes</h2>
+
+<p>Now that we&#8217;ve done all the bookkeeping required, we can create new nodes to
+encode the children of the <code>active_nodes</code> of this level. To do this, we&#8217;ll
+append to the end of our <code>nodes</code> array a new entry for each child. The value of
+each entry will encode the kind of node it is, along with information about
+where to find the data associated with it.</p>
+
+<p>The sequential code looks like this:</p>
+
+<pre><code>void create_child_nodes(const std::vector&lt;int&gt; &amp;child_node_kind,
+                        const std::vector&lt;int&gt; &amp;nodes_on_this_level,
+                        const std::vector&lt;int&gt; &amp;leaves_on_this_level,
+                        int num_leaves,
+                        std::vector&lt;int&gt; &amp;nodes)
+{
+  int num_children = child_node_kind.size();
+
+  int children_begin = nodes.size();
+  nodes.resize(nodes.size() + num_children);
+
+  for(int i = 0 ; i &lt; num_children; ++i)
+  {
+    switch(child_node_kind[i])
+    {
+    case EMPTY:
+      nodes[children_begin + i] = get_empty_id();
+      break;
+    case LEAF:
+      nodes[children_begin + i] = get_leaf_id(num_leaves + leaves_on_this_level[i]);
+      break;
+    case NODE:
+      nodes[children_begin + i] = nodes.size() + 4 * nodes_on_this_level[i];
+      break;
+    }
+  }
+}
+</code></pre>
+
+<p>We begin by reserving space for each new child entry at the end of the <code>nodes</code>
+array. Before resizing the array, we note the index which marks the beginning
+of the new list of child nodes. To create each new entry, we loop through the
+new nodes, and depending on the kind of node it is, we encode some bookkeeping
+information: either an empty node id, a leaf id, or the index of an interior
+node&#8217;s first child.</p>
+
+<p>Of course, this is another job for <code>thrust::transform</code>:</p>
+
+<pre><code>struct write_nodes
+{
+  int num_nodes, num_leaves;
+
+  write_nodes(int num_nodes, int num_leaves) : 
+    num_nodes(num_nodes), num_leaves(num_leaves) 
+  {}
+
+  template &lt;typename tuple_type&gt;
+  inline __device__ __host__
+  int operator()(const tuple_type &amp;t) const
+  {
+    int node_type = thrust::get&lt;0&gt;(t);
+    int node_idx  = thrust::get&lt;1&gt;(t);
+    int leaf_idx  = thrust::get&lt;2&gt;(t);
+
+    if (node_type == EMPTY)
+    {
+      return get_empty_id();
+    }
+    else if (node_type == LEAF)
+    {
+      return get_leaf_id(num_leaves + leaf_idx);
+    }
+    else
+    {
+      return num_nodes + 4 * node_idx;
+    }
+  }
+};
+
+void create_child_nodes(const thrust::device_vector&lt;int&gt; &amp;child_node_kind,
+                        const thrust::device_vector&lt;int&gt; &amp;nodes_on_this_level,
+                        const thrust::device_vector&lt;int&gt; &amp;leaves_on_this_level,
+                        int num_leaves,
+                        thrust::device_vector&lt;int&gt; &amp;nodes)
+{
+  int num_children = child_node_kind.size();
+
+  int children_begin = nodes.size();
+  nodes.resize(nodes.size() + num_children);
+
+  thrust::transform(thrust::make_zip_iterator(
+                        thrust::make_tuple(
+                            child_node_kind.begin(), nodes_on_this_level.begin(), leaves_on_this_level.begin())),
+                    thrust::make_zip_iterator(
+                        thrust::make_tuple(
+                            child_node_kind.end(), nodes_on_this_level.end(), leaves_on_this_level.end())),
+                    nodes.begin() + children_begin,
+                    write_nodes(nodes.size(), num_leaves));
+}
+</code></pre>
+
+<p>The interesting thing about this transformation is that it requires three
+inputs. Since <code>thrust::transform</code> only supports transformations with up to two
+inputs, we &#8220;fool&#8221; it by zipping together three inputs with a <code>zip_iterator</code>.</p>
+
+<p>To create a <code>zip_iterator</code>, we call <code>thrust::make_zip_iterator</code> with an
+argument which is a <code>tuple</code> of the iterators we want to zip together. To make
+the <code>tuple</code> of iterators, we use <code>thrust::make_tuple</code>.</p>
+
+<p>The functor we pass to <code>thrust::transform</code>, <code>write_nodes</code>, unpacks the <code>tuple</code>
+it receives using the special function <code>thrust::get&lt;i&gt;</code>. We call it once with a
+different index for each of the three parameters: <code>node_type</code>, <code>node_idx</code>, and
+<code>leaf_idx</code>. The rest of the functor body looks like the original body of the
+<code>for</code> loop.</p>
+
+<h2 id="creatingtheleaves">Creating the Leaves</h2>
+
+<p>We&#8217;re almost done with creating this level&#8217;s nodes. However, some of these
+nodes are terminal leaves. For these, we&#8217;ll need to encode which of our
+original points they contain. Remember, for each child, we stored indices into
+the list of points they bounded inside the <code>lower_bounds</code> and <code>upper_bounds</code>
+arrays. For each node which is a leaf, we&#8217;ll append these bounds into an
+auxiliary array, <code>leaves</code>.</p>
+
+<p>Here&#8217;s the sequential code:</p>
+
+<pre><code>void create_leaves(const std::vector&lt;int&gt; &amp;child_node_kind,
+                   const std::vector&lt;int&gt; &amp;leaves_on_this_level,
+                   const std::vector&lt;int&gt; &amp;lower_bounds,
+                   const std::vector&lt;int&gt; &amp;upper_bounds,
+                   int num_leaves_on_this_level,
+                   std::vector&lt;int2&gt; &amp;leaves)
+{
+  int children_begin = leaves.size();
+
+  leaves.resize(leaves.size() + num_leaves_on_this_level);
+
+  for(int i = 0; i &lt; child_node_kind.size() ; ++i)
+  {
+    if(child_node_kind[i] == LEAF)
+    {
+      leaves[children_begin + leaves_on_this_level[i]] = make_int2(lower_bounds[i], upper_bounds[i]);
+    }
+  }
+}
+</code></pre>
+
+<p>We begin by noting where in the <code>leaves</code> array the new children begin. Next, we
+reserve enough room in the <code>leaves</code> array to append all the new children.
+Finally, for each child node which is a leaf, we copy to an entry in <code>leaves</code>
+an <code>int2</code> which encodes the range of points the leaf spans. This is just the
+pair of bounds.</p>
+
+<p>The position of each new leaf is encoded by the <code>leaves_on_this_level</code> array we
+computed previously using a prefix sum. This kind of write is indirect: to find
+the location within <code>leaves</code> to write to, we do a lookup into
+<code>leaves_on_this_level</code>. We often call this kind of indirect write a <strong>scatter</strong>
+operation.</p>
+
+<p>We can parallelize this operation using <code>thrust::scatter_if</code>:</p>
+
+<pre><code>struct make_leaf
+{
+  typedef int2 result_type;
+  template &lt;typename tuple_type&gt;
+  inline __device__ __host__
+  int2 operator()(const tuple_type &amp;t) const
+  {
+    int x = thrust::get&lt;0&gt;(t);
+    int y = thrust::get&lt;1&gt;(t);
+
+    return make_int2(x, y);
+  }
+};
+
+void create_leaves(const thrust::device_vector&lt;int&gt; &amp;child_node_kind,
+                   const thrust::device_vector&lt;int&gt; &amp;leaves_on_this_level,
+                   const thrust::device_vector&lt;int&gt; &amp;lower_bounds,
+                   const thrust::device_vector&lt;int&gt; &amp;upper_bounds,
+                   int num_leaves_on_this_level,
+                   thrust::device_vector&lt;int2&gt; &amp;leaves)
+{
+  int children_begin = leaves.size();
+
+  leaves.resize(leaves.size() + num_leaves_on_this_level);
+
+  thrust::scatter_if(thrust::make_transform_iterator(
+                         thrust::make_zip_iterator(
+                             thrust::make_tuple(lower_bounds.begin(), upper_bounds.begin())),
+                         make_leaf()),
+                     thrust::make_transform_iterator(
+                         thrust::make_zip_iterator(
+                             thrust::make_tuple(lower_bounds.end(), upper_bounds.end())),
+                         make_leaf()),
+                     leaves_on_this_level.begin(),
+                     child_node_kind.begin(),
+                     leaves.begin() + children_begin,
+                     is_a&lt;LEAF&gt;());
+}
+</code></pre>
+
+<p>This is the gnarliest looking call we&#8217;ve seen so far. The basic idea is that
+we&#8217;re going to take the elements of <code>lower_bounds</code> and <code>upper_bounds</code> and
+conditionally scatter them to the <code>leaves</code> array when they correspond to a node
+which is a leaf. </p>
+
+<p>Let&#8217;s begin by deciphering the <code>make_transform_iterator</code> and
+<code>make_zip_iterator</code> calls. To fit into the <code>leaves</code> array which is of type
+<code>int2</code>, We need to turn the elements of <code>lower_bounds</code> and <code>upper_bounds</code> into
+<code>int2</code>. To do that, we begin by zipping together the two arrays, which
+basically results in an array of <code>tuple</code>s. To get an <code>int</code>, we need to
+transform the <code>tuple</code> using the <code>make_leaf</code> functor. If we hook that into
+<code>make_transform_iterator</code>, we&#8217;ll have what looks like an array of <code>int2</code>, which
+is what will fit the <code>leaves</code> array.</p>
+
+<p>To find the location in the <code>leaves</code> array where each <code>int2</code> should go, we pass
+our <code>leaves_on_this_level</code> array. Remember, this array stores the &#8220;rank&#8221; of
+each leaf node. When these ranks are used as scatter indices, this ensures that
+the leaves are stored contiguously at the end of the <code>leaves</code> array.</p>
+
+<p>But we don&#8217;t want to scatter all the bounds to the <code>leaves</code> array &#8211; we only
+want to store the ones that correspond to <code>leaves</code>. That&#8217;s where our condition
+comes in. To compute whether or not an element from our input should be
+scattered, we pass the <code>child_node_kind</code> array along with the <code>is_a&lt;LEAF&gt;()</code>
+functor. For each input element, <code>thrust::scatter_if</code> will transform the
+corresponding element of the <code>child_node_kind</code> array using this functor. If it
+evaluates to true, then it will scatter the input element. Otherwise,
+<code>thrust::scatter_if</code> will just ignore it.</p>
+
+<p>Finally, we pass the position in the <code>leaves</code> array where the new children
+begin: this is at <code>leaves.begin + children_begin</code>.</p>
+
+<p>Phew!</p>
+
+<h2 id="activatingthenextlevel">Activating the Next Level</h2>
+
+<p>To finish up the iteration, we need to activate the children which will become the parents of the next level.
+These nodes are simply the interior nodes we encountered on this level. </p>
+
+<p>The sequential code simply copies to the <code>active_nodes</code> array those elements of <code>children</code> which are interior nodes:</p>
+
+<pre><code>void activate_nodes_for_next_level(const std::vector&lt;int&gt; &amp;children,
+                                   const std::vector&lt;int&gt; &amp;child_node_kind,
+                                   int num_nodes_on_this_level,
+                                   std::vector&lt;int&gt; &amp;active_nodes)
+{
+  active_nodes.resize(num_nodes_on_this_level);
+
+  for(int i = 0, j = 0; i &lt; children.size(); ++i)
+  {
+    if(child_node_kind[i] == NODE)
+    {
+      active_nodes[j++] = children[i];
+    }
+  }
+}
+</code></pre>
+
+<p>Hmm&#8230; the way we&#8217;re using that <code>j</code> counter looks suspiciously similar to a
+prefix sum. However, in this case, we&#8217;re not writing the value of the counter
+to an output array, we&#8217;re using it to <em>index</em> into an output array. This kind
+of operation is sometimes called <strong>stream compaction</strong> which is basically a
+prefix sum and scatter combined.</p>
+
+<p>With Thrust, we can implement a stream compaction operation using <code>thrust::copy_if</code>:</p>
+
+<pre><code>void activate_nodes_for_next_level(const thrust::device_vector&lt;int&gt; &amp;children,
+                                   const thrust::device_vector&lt;int&gt; &amp;child_node_kind,
+                                   int num_nodes_on_this_level,
+                                   thrust::device_vector&lt;int&gt; &amp;active_nodes)
+{
+  active_nodes.resize(num_nodes_on_this_level);
+
+  thrust::copy_if(children.begin(),
+                  children.end(),
+                  child_node_kind.begin(),
+                  active_nodes.begin(),
+                  is_a&lt;NODE&gt;());
+}
+</code></pre>
+
+<p>Here, the idea is that we&#8217;re going to copy an element from the input <code>children</code>
+array to the output <code>active_nodes</code> array only when the element satisfies a
+condition (kind of like <code>thrust::scatter_if</code>). Here, the condition is given by
+the <code>is_a&lt;NODE&gt;()</code> functor, which is applied to each element of the
+<code>child_node_kind</code> array. Each time an element of the <code>child_node_kind</code> array
+satisfies the functor, the corresponding element from <code>children</code> will get
+copied to <code>active_nodes</code>.</p>
+
+<p>And that&#8217;s it! If we iterate these steps up to <code>max_level</code> while <code>active_nodes</code>
+still has work left in it, we&#8217;ll arrive at a finished tree.</p>
+
+<h1 id="performance">Performance</h1>
+
+<p>Let&#8217;s see how we did. <a href="performance.cu"><code>performance.cu</code></a> provides an
+instrumented version of the solution we can use for measuring its performance.
+Since we&#8217;ve built our solution using <code>thrust::device_vector</code>, it&#8217;s easy to
+switch between building a program which targets the CPU or the GPU on the
+command line:</p>
+
+<pre><code># build the cpu solution
+$ scons cpu_performance
+$ ./cpu_performance
+Warming up...
+
+Timing...
+
+5.27696 millions of points generated and treeified per second.
+
+# build the gpu solution
+$ scons gpu_performance
+$ ./gpu_performance
+Warming up...
+
+Timing...
+
+144.16 millions of points generated and treeified per second.
+</code></pre>
+
+<p>For the GPU (an NVIDIA Tesla K20c) version, that&#8217;s over 25 times the
+performance as the sequential version of the code running on the CPU (an Intel
+ Core i7 860).</p>
+
+<p>Substantial optimizations could probably still be made to both versions of the
+code. For example, some temporary <code>device_vector</code>s we introduced could probably
+be replaced with <code>transform_iterator</code>s which don&#8217;t incur memory storage
+overhead. Additionally, some opportunities for fusion exist. For example, both
+of our calls to <code>thrust::transform_exclusive_scan</code> could be fused together into
+a single scan with some clever use of <code>zip_iterator</code>s. But those are exercises
+left to the reader.</p>
+
+<h1 id="wrappingup">Wrapping Up</h1>
+
+<p>In working through this example, we saw how fundamental parallel algorithms
+could be used to accelerate the construction and manipulation of a complex data
+structure. However, parallelization can come at a cost in code complexity. The
+linear representation of this example is a far cry from the classical
+organization of a tree data structure via a recursive arrangement of nodes.
+Often, parallelization involves rethinking the organization of our data to make
+operating on it in parallel more convenient.</p>
+
+<script>var hljs=new function(){function m(p){return p.replace(/&/gm,"&amp;").replace(/</gm,"&lt;")}function c(r,q,p){return RegExp(q,"m"+(r.cI?"i":"")+(p?"g":""))}function j(r){for(var p=0;p<r.childNodes.length;p++){var q=r.childNodes[p];if(q.nodeName=="CODE"){return q}if(!(q.nodeType==3&&q.nodeValue.match(/\s+/))){break}}}function g(t,s){var r="";for(var q=0;q<t.childNodes.length;q++){if(t.childNodes[q].nodeType==3){var p=t.childNodes[q].nodeValue;if(s){p=p.replace(/\n/g,"")}r+=p}else{if(t.childNodes[q].nodeName=="BR"){r+="\n"}else{r+=g(t.childNodes[q])}}}if(/MSIE [678]/.test(navigator.userAgent)){r=r.replace(/\r/g,"\n")}return r}function a(s){var q=s.className.split(/\s+/);q=q.concat(s.parentNode.className.split(/\s+/));for(var p=0;p<q.length;p++){var r=q[p].replace(/^language-/,"");if(d[r]||r=="no-highlight"){return r}}}function b(p){var q=[];(function(s,t){for(var r=0;r<s.childNodes.length;r++){if(s.childNodes[r].nodeType==3){t+=s.childNodes[r].nodeValue.length}else{if(s.childNodes[r].nodeName=="BR"){t+=1}else{q.push({event:"start",offset:t,node:s.childNodes[r]});t=arguments.callee(s.childNodes[r],t);q.push({event:"stop",offset:t,node:s.childNodes[r]})}}}return t})(p,0);return q}function l(y,z,x){var r=0;var w="";var t=[];function u(){if(y.length&&z.length){if(y[0].offset!=z[0].offset){return(y[0].offset<z[0].offset)?y:z}else{return z[0].event=="start"?y:z}}else{return y.length?y:z}}function s(C){var D="<"+C.nodeName.toLowerCase();for(var A=0;A<C.attributes.length;A++){var B=C.attributes[A];D+=" "+B.nodeName.toLowerCase();if(B.nodeValue!=undefined&&B.nodeValue!=false&&B.nodeValue!=null){D+='="'+m(B.nodeValue)+'"'}}return D+">"}while(y.length||z.length){var v=u().splice(0,1)[0];w+=m(x.substr(r,v.offset-r));r=v.offset;if(v.event=="start"){w+=s(v.node);t.push(v.node)}else{if(v.event=="stop"){var q=t.length;do{q--;var p=t[q];w+=("</"+p.nodeName.toLowerCase()+">")}while(p!=v.node);t.splice(q,1);while(q<t.length){w+=s(t[q]);q++}}}}w+=x.substr(r);return w}function i(){function p(u,t,v){if(u.compiled){return}if(!v){u.bR=c(t,u.b?u.b:"\\B|\\b");if(!u.e&&!u.eW){u.e="\\B|\\b"}if(u.e){u.eR=c(t,u.e)}}if(u.i){u.iR=c(t,u.i)}if(u.r==undefined){u.r=1}if(u.k){u.lR=c(t,u.l||hljs.IR,true)}for(var s in u.k){if(!u.k.hasOwnProperty(s)){continue}if(u.k[s] instanceof Object){u.kG=u.k}else{u.kG={keyword:u.k}}break}if(!u.c){u.c=[]}u.compiled=true;for(var r=0;r<u.c.length;r++){p(u.c[r],t,false)}if(u.starts){p(u.starts,t,false)}}for(var q in d){if(!d.hasOwnProperty(q)){continue}p(d[q].dM,d[q],true)}}function e(J,D){if(!i.called){i();i.called=true}function z(r,M){for(var L=0;L<M.c.length;L++){if(M.c[L].bR.test(r)){return M.c[L]}}}function w(L,r){if(C[L].e&&C[L].eR.test(r)){return 1}if(C[L].eW){var M=w(L-1,r);return M?M+1:0}return 0}function x(r,L){return L.iR&&L.iR.test(r)}function A(O,N){var M=[];for(var L=0;L<O.c.length;L++){M.push(O.c[L].b)}var r=C.length-1;do{if(C[r].e){M.push(C[r].e)}r--}while(C[r+1].eW);if(O.i){M.push(O.i)}return c(N,"("+M.join("|")+")",true)}function s(M,L){var N=C[C.length-1];if(!N.t){N.t=A(N,H)}N.t.lastIndex=L;var r=N.t.exec(M);if(r){return[M.substr(L,r.index-L),r[0],false]}else{return[M.substr(L),"",true]}}function p(O,r){var L=H.cI?r[0].toLowerCase():r[0];for(var N in O.kG){if(!O.kG.hasOwnProperty(N)){continue}var M=O.kG[N].hasOwnProperty(L);if(M){return[N,M]}}return false}function F(M,O){if(!O.k){return m(M)}var N="";var P=0;O.lR.lastIndex=0;var L=O.lR.exec(M);while(L){N+=m(M.substr(P,L.index-P));var r=p(O,L);if(r){t+=r[1];N+='<span class="'+r[0]+'">'+m(L[0])+"</span>"}else{N+=m(L[0])}P=O.lR.lastIndex;L=O.lR.exec(M)}N+=m(M.substr(P,M.length-P));return N}function K(r,M){if(M.sL&&d[M.sL]){var L=e(M.sL,r);t+=L.keyword_count;return L.value}else{return F(r,M)}}function I(M,r){var L=M.cN?'<span class="'+M.cN+'">':"";if(M.rB){q+=L;M.buffer=""}else{if(M.eB){q+=m(r)+L;M.buffer=""}else{q+=L;M.buffer=r}}C.push(M);B+=M.r}function E(O,L,Q){var R=C[C.length-1];if(Q){q+=K(R.buffer+O,R);return false}var M=z(L,R);if(M){q+=K(R.buffer+O,R);I(M,L);return M.rB}var r=w(C.length-1,L);if(r){var N=R.cN?"</span>":"";if(R.rE){q+=K(R.buffer+O,R)+N}else{if(R.eE){q+=K(R.buffer+O,R)+N+m(L)}else{q+=K(R.buffer+O+L,R)+N}}while(r>1){N=C[C.length-2].cN?"</span>":"";q+=N;r--;C.length--}var P=C[C.length-1];C.length--;C[C.length-1].buffer="";if(P.starts){I(P.starts,"")}return R.rE}if(x(L,R)){throw"Illegal"}}var H=d[J];var C=[H.dM];var B=0;var t=0;var q="";try{var v=0;H.dM.buffer="";do{var y=s(D,v);var u=E(y[0],y[1],y[2]);v+=y[0].length;if(!u){v+=y[1].length}}while(!y[2]);if(C.length>1){throw"Illegal"}return{r:B,keyword_count:t,value:q}}catch(G){if(G=="Illegal"){return{r:0,keyword_count:0,value:m(D)}}else{throw G}}}function f(t){var r={keyword_count:0,r:0,value:m(t)};var q=r;for(var p in d){if(!d.hasOwnProperty(p)){continue}var s=e(p,t);s.language=p;if(s.keyword_count+s.r>q.keyword_count+q.r){q=s}if(s.keyword_count+s.r>r.keyword_count+r.r){q=r;r=s}}if(q.language){r.second_best=q}return r}function h(r,q,p){if(q){r=r.replace(/^((<[^>]+>|\t)+)/gm,function(t,w,v,u){return w.replace(/\t/g,q)})}if(p){r=r.replace(/\n/g,"<br>")}return r}function o(u,x,q){var y=g(u,q);var s=a(u);if(s=="no-highlight"){return}if(s){var w=e(s,y)}else{var w=f(y);s=w.language}var p=b(u);if(p.length){var r=document.createElement("pre");r.innerHTML=w.value;w.value=l(p,b(r),y)}w.value=h(w.value,x,q);var t=u.className;if(!t.match("(\\s|^)(language-)?"+s+"(\\s|$)")){t=t?(t+" "+s):s}if(/MSIE [678]/.test(navigator.userAgent)&&u.tagName=="CODE"&&u.parentNode.tagName=="PRE"){var r=u.parentNode;var v=document.createElement("div");v.innerHTML="<pre><code>"+w.value+"</code></pre>";u=v.firstChild.firstChild;v.firstChild.cN=r.cN;r.parentNode.replaceChild(v.firstChild,r)}else{u.innerHTML=w.value}u.className=t;u.result={language:s,kw:w.keyword_count,re:w.r};if(w.second_best){u.second_best={language:w.second_best.language,kw:w.second_best.keyword_count,re:w.second_best.r}}}function k(){if(k.called){return}k.called=true;var r=document.getElementsByTagName("pre");for(var p=0;p<r.length;p++){var q=j(r[p]);if(q){o(q,hljs.tabReplace)}}}function n(){if(window.addEventListener){window.addEventListener("DOMContentLoaded",k,false);window.addEventListener("load",k,false)}else{if(window.attachEvent){window.attachEvent("onload",k)}else{window.onload=k}}}var d={};this.LANGUAGES=d;this.highlight=e;this.highlightAuto=f;this.fixMarkup=h;this.highlightBlock=o;this.initHighlighting=k;this.initHighlightingOnLoad=n;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="\\b(0x[A-Za-z0-9]+|\\d+(\\.\\d+)?)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.BE={b:"\\\\.",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.inherit=function(p,s){var r={};for(var q in p){r[q]=p[q]}if(s){for(var q in s){r[q]=s[q]}}return r}}();hljs.LANGUAGES.bash=function(){var d={"true":1,"false":1};var b={cN:"variable",b:"\\$([a-zA-Z0-9_]+)\\b"};var a={cN:"variable",b:"\\$\\{(([^}])|(\\\\}))+\\}",c:[hljs.CNM]};var c={cN:"string",b:'"',e:'"',i:"\\n",c:[hljs.BE,b,a],r:0};var e={cN:"test_condition",b:"",e:"",c:[c,b,a,hljs.CNM],k:{literal:d},r:0};return{dM:{k:{keyword:{"if":1,then:1,"else":1,fi:1,"for":1,"break":1,"continue":1,"while":1,"in":1,"do":1,done:1,echo:1,exit:1,"return":1,set:1,declare:1},literal:d},c:[{cN:"shebang",b:"(#!\\/bin\\/bash)|(#!\\/bin\\/sh)",r:10},hljs.HCM,hljs.CNM,c,b,a,hljs.inherit(e,{b:"\\[ ",e:" \\]",r:0}),hljs.inherit(e,{b:"\\[\\[ ",e:" \\]\\]"})]}}}();hljs.LANGUAGES.cs={dM:{k:{"abstract":1,as:1,base:1,bool:1,"break":1,"byte":1,"case":1,"catch":1,"char":1,checked:1,"class":1,"const":1,"continue":1,decimal:1,"default":1,delegate:1,"do":1,"do":1,"double":1,"else":1,"enum":1,event:1,explicit:1,extern:1,"false":1,"finally":1,fixed:1,"float":1,"for":1,foreach:1,"goto":1,"if":1,implicit:1,"in":1,"int":1,"interface":1,internal:1,is:1,lock:1,"long":1,namespace:1,"new":1,"null":1,object:1,operator:1,out:1,override:1,params:1,"private":1,"protected":1,"public":1,readonly:1,ref:1,"return":1,sbyte:1,sealed:1,"short":1,sizeof:1,stackalloc:1,"static":1,string:1,struct:1,"switch":1,"this":1,"throw":1,"true":1,"try":1,"typeof":1,uint:1,ulong:1,unchecked:1,unsafe:1,ushort:1,using:1,virtual:1,"volatile":1,"void":1,"while":1,ascending:1,descending:1,from:1,get:1,group:1,into:1,join:1,let:1,orderby:1,partial:1,select:1,set:1,value:1,"var":1,where:1,yield:1},c:[{cN:"comment",b:"///",e:"$",rB:true,c:[{cN:"xmlDocTag",b:"///|<!--|-->"},{cN:"xmlDocTag",b:"</?",e:">"}]},hljs.CLCM,hljs.CBLCLM,{cN:"string",b:'@"',e:'"',c:[{b:'""'}]},hljs.ASM,hljs.QSM,hljs.CNM]}};hljs.LANGUAGES.ruby=function(){var g="[a-zA-Z_][a-zA-Z0-9_]*(\\!|\\?)?";var a="[a-zA-Z_]\\w*[!?=]?|[-+~]\\@|<<|>>|=~|===?|<=>|[<>]=?|\\*\\*|[-/+%^&*~`|]|\\[\\]=?";var n={keyword:{and:1,"false":1,then:1,defined:1,module:1,"in":1,"return":1,redo:1,"if":1,BEGIN:1,retry:1,end:1,"for":1,"true":1,self:1,when:1,next:1,until:1,"do":1,begin:1,unless:1,END:1,rescue:1,nil:1,"else":1,"break":1,undef:1,not:1,"super":1,"class":1,"case":1,require:1,yield:1,alias:1,"while":1,ensure:1,elsif:1,or:1,def:1},keymethods:{__id__:1,__send__:1,abort:1,abs:1,"all?":1,allocate:1,ancestors:1,"any?":1,arity:1,assoc:1,at:1,at_exit:1,autoload:1,"autoload?":1,"between?":1,binding:1,binmode:1,"block_given?":1,call:1,callcc:1,caller:1,capitalize:1,"capitalize!":1,casecmp:1,"catch":1,ceil:1,center:1,chomp:1,"chomp!":1,chop:1,"chop!":1,chr:1,"class":1,class_eval:1,"class_variable_defined?":1,class_variables:1,clear:1,clone:1,close:1,close_read:1,close_write:1,"closed?":1,coerce:1,collect:1,"collect!":1,compact:1,"compact!":1,concat:1,"const_defined?":1,const_get:1,const_missing:1,const_set:1,constants:1,count:1,crypt:1,"default":1,default_proc:1,"delete":1,"delete!":1,delete_at:1,delete_if:1,detect:1,display:1,div:1,divmod:1,downcase:1,"downcase!":1,downto:1,dump:1,dup:1,each:1,each_byte:1,each_index:1,each_key:1,each_line:1,each_pair:1,each_value:1,each_with_index:1,"empty?":1,entries:1,eof:1,"eof?":1,"eql?":1,"equal?":1,"eval":1,exec:1,exit:1,"exit!":1,extend:1,fail:1,fcntl:1,fetch:1,fileno:1,fill:1,find:1,find_all:1,first:1,flatten:1,"flatten!":1,floor:1,flush:1,for_fd:1,foreach:1,fork:1,format:1,freeze:1,"frozen?":1,fsync:1,getc:1,gets:1,global_variables:1,grep:1,gsub:1,"gsub!":1,"has_key?":1,"has_value?":1,hash:1,hex:1,id:1,include:1,"include?":1,included_modules:1,index:1,indexes:1,indices:1,induced_from:1,inject:1,insert:1,inspect:1,instance_eval:1,instance_method:1,instance_methods:1,"instance_of?":1,"instance_variable_defined?":1,instance_variable_get:1,instance_variable_set:1,instance_variables:1,"integer?":1,intern:1,invert:1,ioctl:1,"is_a?":1,isatty:1,"iterator?":1,join:1,"key?":1,keys:1,"kind_of?":1,lambda:1,last:1,length:1,lineno:1,ljust:1,load:1,local_variables:1,loop:1,lstrip:1,"lstrip!":1,map:1,"map!":1,match:1,max:1,"member?":1,merge:1,"merge!":1,method:1,"method_defined?":1,method_missing:1,methods:1,min:1,module_eval:1,modulo:1,name:1,nesting:1,"new":1,next:1,"next!":1,"nil?":1,nitems:1,"nonzero?":1,object_id:1,oct:1,open:1,pack:1,partition:1,pid:1,pipe:1,pop:1,popen:1,pos:1,prec:1,prec_f:1,prec_i:1,print:1,printf:1,private_class_method:1,private_instance_methods:1,"private_method_defined?":1,private_methods:1,proc:1,protected_instance_methods:1,"protected_method_defined?":1,protected_methods:1,public_class_method:1,public_instance_methods:1,"public_method_defined?":1,public_methods:1,push:1,putc:1,puts:1,quo:1,raise:1,rand:1,rassoc:1,read:1,read_nonblock:1,readchar:1,readline:1,readlines:1,readpartial:1,rehash:1,reject:1,"reject!":1,remainder:1,reopen:1,replace:1,require:1,"respond_to?":1,reverse:1,"reverse!":1,reverse_each:1,rewind:1,rindex:1,rjust:1,round:1,rstrip:1,"rstrip!":1,scan:1,seek:1,select:1,send:1,set_trace_func:1,shift:1,singleton_method_added:1,singleton_methods:1,size:1,sleep:1,slice:1,"slice!":1,sort:1,"sort!":1,sort_by:1,split:1,sprintf:1,squeeze:1,"squeeze!":1,srand:1,stat:1,step:1,store:1,strip:1,"strip!":1,sub:1,"sub!":1,succ:1,"succ!":1,sum:1,superclass:1,swapcase:1,"swapcase!":1,sync:1,syscall:1,sysopen:1,sysread:1,sysseek:1,system:1,syswrite:1,taint:1,"tainted?":1,tell:1,test:1,"throw":1,times:1,to_a:1,to_ary:1,to_f:1,to_hash:1,to_i:1,to_int:1,to_io:1,to_proc:1,to_s:1,to_str:1,to_sym:1,tr:1,"tr!":1,tr_s:1,"tr_s!":1,trace_var:1,transpose:1,trap:1,truncate:1,"tty?":1,type:1,ungetc:1,uniq:1,"uniq!":1,unpack:1,unshift:1,untaint:1,untrace_var:1,upcase:1,"upcase!":1,update:1,upto:1,"value?":1,values:1,values_at:1,warn:1,write:1,write_nonblock:1,"zero?":1,zip:1}};var h={cN:"yardoctag",b:"@[A-Za-z]+"};var d={cN:"comment",b:"#",e:"$",c:[h]};var c={cN:"comment",b:"^\\=begin",e:"^\\=end",c:[h],r:10};var b={cN:"comment",b:"^__END__",e:"\\n$"};var u={cN:"subst",b:"#\\{",e:"}",l:g,k:n};var p=[hljs.BE,u];var s={cN:"string",b:"'",e:"'",c:p,r:0};var r={cN:"string",b:'"',e:'"',c:p,r:0};var q={cN:"string",b:"%[qw]?\\(",e:"\\)",c:p,r:10};var o={cN:"string",b:"%[qw]?\\[",e:"\\]",c:p,r:10};var m={cN:"string",b:"%[qw]?{",e:"}",c:p,r:10};var l={cN:"string",b:"%[qw]?<",e:">",c:p,r:10};var k={cN:"string",b:"%[qw]?/",e:"/",c:p,r:10};var j={cN:"string",b:"%[qw]?%",e:"%",c:p,r:10};var i={cN:"string",b:"%[qw]?-",e:"-",c:p,r:10};var t={cN:"string",b:"%[qw]?\\|",e:"\\|",c:p,r:10};var e={cN:"function",b:"\\bdef\\s+",e:" |$|;",l:g,k:n,c:[{cN:"title",b:a,l:g,k:n},{cN:"params",b:"\\(",e:"\\)",l:g,k:n},d,c,b]};var f={cN:"identifier",b:g,l:g,k:n,r:0};var v=[d,c,b,s,r,q,o,m,l,k,j,i,t,{cN:"class",b:"\\b(class|module)\\b",e:"$|;",k:{"class":1,module:1},c:[{cN:"title",b:"[A-Za-z_]\\w*(::\\w+)*(\\?|\\!)?",r:0},{cN:"inheritance",b:"<\\s*",c:[{cN:"parent",b:"("+hljs.IR+"::)?"+hljs.IR}]},d,c,b]},e,{cN:"constant",b:"(::)?([A-Z]\\w*(::)?)+",r:0},{cN:"symbol",b:":",c:[s,r,q,o,m,l,k,j,i,t,f],r:0},{cN:"number",b:"(\\b0[0-7_]+)|(\\b0x[0-9a-fA-F_]+)|(\\b[1-9][0-9_]*(\\.[0-9_]+)?)|[0_]\\b",r:0},{cN:"number",b:"\\?\\w"},{cN:"variable",b:"(\\$\\W)|((\\$|\\@\\@?)(\\w+))"},f,{b:"("+hljs.RSR+")\\s*",c:[d,c,b,{cN:"regexp",b:"/",e:"/[a-z]*",i:"\\n",c:[hljs.BE]}],r:0}];u.c=v;e.c[1].c=v;return{dM:{l:g,k:n,c:v}}}();hljs.LANGUAGES.diff={cI:true,dM:{c:[{cN:"chunk",b:"^\\@\\@ +\\-\\d+,\\d+ +\\+\\d+,\\d+ +\\@\\@$",r:10},{cN:"chunk",b:"^\\*\\*\\* +\\d+,\\d+ +\\*\\*\\*\\*$",r:10},{cN:"chunk",b:"^\\-\\-\\- +\\d+,\\d+ +\\-\\-\\-\\-$",r:10},{cN:"header",b:"Index: ",e:"$"},{cN:"header",b:"=====",e:"=====$"},{cN:"header",b:"^\\-\\-\\-",e:"$"},{cN:"header",b:"^\\*{3} ",e:"$"},{cN:"header",b:"^\\+\\+\\+",e:"$"},{cN:"header",b:"\\*{5}",e:"\\*{5}$"},{cN:"addition",b:"^\\+",e:"$"},{cN:"deletion",b:"^\\-",e:"$"},{cN:"change",b:"^\\!",e:"$"}]}};hljs.LANGUAGES.javascript={dM:{k:{keyword:{"in":1,"if":1,"for":1,"while":1,"finally":1,"var":1,"new":1,"function":1,"do":1,"return":1,"void":1,"else":1,"break":1,"catch":1,"instanceof":1,"with":1,"throw":1,"case":1,"default":1,"try":1,"this":1,"switch":1,"continue":1,"typeof":1,"delete":1},literal:{"true":1,"false":1,"null":1}},c:[hljs.ASM,hljs.QSM,hljs.CLCM,hljs.CBLCLM,hljs.CNM,{b:"("+hljs.RSR+"|case|return|throw)\\s*",k:{"return":1,"throw":1,"case":1},c:[hljs.CLCM,hljs.CBLCLM,{cN:"regexp",b:"/",e:"/[gim]*",c:[{b:"\\\\/"}]}],r:0},{cN:"function",b:"\\bfunction\\b",e:"{",k:{"function":1},c:[{cN:"title",b:"[A-Za-z$_][0-9A-Za-z$_]*"},{cN:"params",b:"\\(",e:"\\)",c:[hljs.ASM,hljs.QSM,hljs.CLCM,hljs.CBLCLM]}]}]}};hljs.LANGUAGES.css=function(){var a={cN:"function",b:hljs.IR+"\\(",e:"\\)",c:[{eW:true,eE:true,c:[hljs.NM,hljs.ASM,hljs.QSM]}]};return{cI:true,dM:{i:"[=/|']",c:[hljs.CBLCLM,{cN:"id",b:"\\#[A-Za-z0-9_-]+"},{cN:"class",b:"\\.[A-Za-z0-9_-]+",r:0},{cN:"attr_selector",b:"\\[",e:"\\]",i:"$"},{cN:"pseudo",b:":(:)?[a-zA-Z0-9\\_\\-\\+\\(\\)\\\"\\']+"},{cN:"at_rule",b:"@(font-face|page)",l:"[a-z-]+",k:{"font-face":1,page:1}},{cN:"at_rule",b:"@",e:"[{;]",eE:true,k:{"import":1,page:1,media:1,charset:1},c:[a,hljs.ASM,hljs.QSM,hljs.NM]},{cN:"tag",b:hljs.IR,r:0},{cN:"rules",b:"{",e:"}",i:"[^\\s]",r:0,c:[hljs.CBLCLM,{cN:"rule",b:"[^\\s]",rB:true,e:";",eW:true,c:[{cN:"attribute",b:"[A-Z\\_\\.\\-]+",e:":",eE:true,i:"[^\\s]",starts:{cN:"value",eW:true,eE:true,c:[a,hljs.NM,hljs.QSM,hljs.ASM,hljs.CBLCLM,{cN:"hexcolor",b:"\\#[0-9A-F]+"},{cN:"important",b:"!important"}]}}]}]}]}}}();hljs.LANGUAGES.xml=function(){var b="[A-Za-z0-9\\._:-]+";var a={eW:true,c:[{cN:"attribute",b:b,r:0},{b:'="',rB:true,e:'"',c:[{cN:"value",b:'"',eW:true}]},{b:"='",rB:true,e:"'",c:[{cN:"value",b:"'",eW:true}]},{b:"=",c:[{cN:"value",b:"[^\\s/>]+"}]}]};return{cI:true,dM:{c:[{cN:"pi",b:"<\\?",e:"\\?>",r:10},{cN:"doctype",b:"<!DOCTYPE",e:">",r:10,c:[{b:"\\[",e:"\\]"}]},{cN:"comment",b:"<!--",e:"-->",r:10},{cN:"cdata",b:"<\\!\\[CDATA\\[",e:"\\]\\]>",r:10},{cN:"tag",b:"<style",e:">",k:{title:{style:1}},c:[a],starts:{cN:"css",e:"</style>",rE:true,sL:"css"}},{cN:"tag",b:"<script",e:">",k:{title:{script:1}},c:[a],starts:{cN:"javascript",e:"<\/script>",rE:true,sL:"javascript"}},{cN:"vbscript",b:"<%",e:"%>",sL:"vbscript"},{cN:"tag",b:"</?",e:"/?>",c:[{cN:"title",b:"[^ />]+"},a]}]}}}();hljs.LANGUAGES.java={dM:{k:{"false":1,"synchronized":1,"int":1,"abstract":1,"float":1,"private":1,"char":1,"interface":1,"boolean":1,"static":1,"null":1,"if":1,"const":1,"for":1,"true":1,"while":1,"long":1,"throw":1,strictfp:1,"finally":1,"protected":1,"extends":1,"import":1,"native":1,"final":1,"implements":1,"return":1,"void":1,"enum":1,"else":1,"break":1,"transient":1,"new":1,"catch":1,"instanceof":1,"byte":1,"super":1,"class":1,"volatile":1,"case":1,assert:1,"short":1,"package":1,"default":1,"double":1,"public":1,"try":1,"this":1,"switch":1,"continue":1,"throws":1},c:[{cN:"javadoc",b:"/\\*\\*",e:"\\*/",c:[{cN:"javadoctag",b:"@[A-Za-z]+"}],r:10},hljs.CLCM,hljs.CBLCLM,hljs.ASM,hljs.QSM,{cN:"class",b:"(class |interface )",e:"{",k:{"class":1,"interface":1},i:":",c:[{b:"(implements|extends)",k:{"extends":1,"implements":1},r:10},{cN:"title",b:hljs.UIR}]},hljs.CNM,{cN:"annotation",b:"@[A-Za-z]+"}]}};hljs.LANGUAGES.php={cI:true,dM:{k:{and:1,include_once:1,list:1,"abstract":1,global:1,"private":1,echo:1,"interface":1,as:1,"static":1,endswitch:1,array:1,"null":1,"if":1,endwhile:1,or:1,"const":1,"for":1,endforeach:1,self:1,"var":1,"while":1,isset:1,"public":1,"protected":1,exit:1,foreach:1,"throw":1,elseif:1,"extends":1,include:1,__FILE__:1,empty:1,require_once:1,"function":1,"do":1,xor:1,"return":1,"implements":1,parent:1,clone:1,use:1,__CLASS__:1,__LINE__:1,"else":1,"break":1,print:1,"eval":1,"new":1,"catch":1,__METHOD__:1,"class":1,"case":1,exception:1,php_user_filter:1,"default":1,die:1,require:1,__FUNCTION__:1,enddeclare:1,"final":1,"try":1,"this":1,"switch":1,"continue":1,endfor:1,endif:1,declare:1,unset:1,"true":1,"false":1,namespace:1},c:[hljs.CLCM,hljs.HCM,{cN:"comment",b:"/\\*",e:"\\*/",c:[{cN:"phpdoc",b:"\\s@[A-Za-z]+",r:10}]},hljs.CNM,hljs.inherit(hljs.ASM,{i:null}),hljs.inherit(hljs.QSM,{i:null}),{cN:"variable",b:"\\$[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*"},{cN:"preprocessor",b:"<\\?php",r:10},{cN:"preprocessor",b:"\\?>"}]}};hljs.LANGUAGES.python=function(){var c={cN:"string",b:"(u|b)?r?'''",e:"'''",r:10};var b={cN:"string",b:'(u|b)?r?"""',e:'"""',r:10};var a={cN:"string",b:"(u|r|ur|b|br)'",e:"'",c:[hljs.BE],r:10};var f={cN:"string",b:'(u|r|ur|b|br)"',e:'"',c:[hljs.BE],r:10};var d={cN:"title",b:hljs.UIR};var e={cN:"params",b:"\\(",e:"\\)",c:[c,b,a,f,hljs.ASM,hljs.QSM]};return{dM:{k:{keyword:{and:1,elif:1,is:1,global:1,as:1,"in":1,"if":1,from:1,raise:1,"for":1,except:1,"finally":1,print:1,"import":1,pass:1,"return":1,exec:1,"else":1,"break":1,not:1,"with":1,"class":1,assert:1,yield:1,"try":1,"while":1,"continue":1,del:1,or:1,def:1,lambda:1,nonlocal:10},built_in:{None:1,True:1,False:1,Ellipsis:1,NotImplemented:1}},i:"(</|->|\\?)",c:[hljs.HCM,c,b,a,f,hljs.ASM,hljs.QSM,{cN:"function",b:"\\bdef ",e:":",i:"$",k:{def:1},c:[d,e],r:10},{cN:"class",b:"\\bclass ",e:":",i:"[${]",k:{"class":1},c:[d,e],r:10},hljs.CNM,{cN:"decorator",b:"@",e:"$"}]}}}();hljs.LANGUAGES.sql={cI:true,dM:{i:"[^\\s]",c:[{cN:"operator",b:"(begin|start|commit|rollback|savepoint|lock|alter|create|drop|rename|call|delete|do|handler|insert|load|replace|select|truncate|update|set|show|pragma)\\b",e:";|$",k:{keyword:{all:1,partial:1,global:1,month:1,current_timestamp:1,using:1,go:1,revoke:1,smallint:1,indicator:1,"end-exec":1,disconnect:1,zone:1,"with":1,character:1,assertion:1,to:1,add:1,current_user:1,usage:1,input:1,local:1,alter:1,match:1,collate:1,real:1,then:1,rollback:1,get:1,read:1,timestamp:1,session_user:1,not:1,integer:1,bit:1,unique:1,day:1,minute:1,desc:1,insert:1,execute:1,like:1,ilike:2,level:1,decimal:1,drop:1,"continue":1,isolation:1,found:1,where:1,constraints:1,domain:1,right:1,national:1,some:1,module:1,transaction:1,relative:1,second:1,connect:1,escape:1,close:1,system_user:1,"for":1,deferred:1,section:1,cast:1,current:1,sqlstate:1,allocate:1,intersect:1,deallocate:1,numeric:1,"public":1,preserve:1,full:1,"goto":1,initially:1,asc:1,no:1,key:1,output:1,collation:1,group:1,by:1,union:1,session:1,both:1,last:1,language:1,constraint:1,column:1,of:1,space:1,foreign:1,deferrable:1,prior:1,connection:1,unknown:1,action:1,commit:1,view:1,or:1,first:1,into:1,"float":1,year:1,primary:1,cascaded:1,except:1,restrict:1,set:1,references:1,names:1,table:1,outer:1,open:1,select:1,size:1,are:1,rows:1,from:1,prepare:1,distinct:1,leading:1,create:1,only:1,next:1,inner:1,authorization:1,schema:1,corresponding:1,option:1,declare:1,precision:1,immediate:1,"else":1,timezone_minute:1,external:1,varying:1,translation:1,"true":1,"case":1,exception:1,join:1,hour:1,"default":1,"double":1,scroll:1,value:1,cursor:1,descriptor:1,values:1,dec:1,fetch:1,procedure:1,"delete":1,and:1,"false":1,"int":1,is:1,describe:1,"char":1,as:1,at:1,"in":1,varchar:1,"null":1,trailing:1,any:1,absolute:1,current_time:1,end:1,grant:1,privileges:1,when:1,cross:1,check:1,write:1,current_date:1,pad:1,begin:1,temporary:1,exec:1,time:1,update:1,catalog:1,user:1,sql:1,date:1,on:1,identity:1,timezone_hour:1,natural:1,whenever:1,interval:1,work:1,order:1,cascade:1,diagnostics:1,nchar:1,having:1,left:1,call:1,"do":1,handler:1,load:1,replace:1,truncate:1,start:1,lock:1,show:1,pragma:1},aggregate:{count:1,sum:1,min:1,max:1,avg:1}},c:[{cN:"string",b:"'",e:"'",c:[hljs.BE,{b:"''"}],r:0},{cN:"string",b:'"',e:'"',c:[hljs.BE,{b:'""'}],r:0},{cN:"string",b:"`",e:"`",c:[hljs.BE]},hljs.CNM,{b:"\\n"}]},hljs.CBLCLM,{cN:"comment",b:"--",e:"$"}]}};hljs.LANGUAGES.ini={cI:true,dM:{i:"[^\\s]",c:[{cN:"comment",b:";",e:"$"},{cN:"title",b:"^\\[",e:"\\]"},{cN:"setting",b:"^[a-z0-9_\\[\\]]+[ \\t]*=[ \\t]*",e:"$",c:[{cN:"value",eW:true,k:{on:1,off:1,"true":1,"false":1,yes:1,no:1},c:[hljs.QSM,hljs.NM]}]}]}};hljs.LANGUAGES.perl=function(){var c={getpwent:1,getservent:1,quotemeta:1,msgrcv:1,scalar:1,kill:1,dbmclose:1,undef:1,lc:1,ma:1,syswrite:1,tr:1,send:1,umask:1,sysopen:1,shmwrite:1,vec:1,qx:1,utime:1,local:1,oct:1,semctl:1,localtime:1,readpipe:1,"do":1,"return":1,format:1,read:1,sprintf:1,dbmopen:1,pop:1,getpgrp:1,not:1,getpwnam:1,rewinddir:1,qq:1,fileno:1,qw:1,endprotoent:1,wait:1,sethostent:1,bless:1,s:1,opendir:1,"continue":1,each:1,sleep:1,endgrent:1,shutdown:1,dump:1,chomp:1,connect:1,getsockname:1,die:1,socketpair:1,close:1,flock:1,exists:1,index:1,shmget:1,sub:1,"for":1,endpwent:1,redo:1,lstat:1,msgctl:1,setpgrp:1,abs:1,exit:1,select:1,print:1,ref:1,gethostbyaddr:1,unshift:1,fcntl:1,syscall:1,"goto":1,getnetbyaddr:1,join:1,gmtime:1,symlink:1,semget:1,splice:1,x:1,getpeername:1,recv:1,log:1,setsockopt:1,cos:1,last:1,reverse:1,gethostbyname:1,getgrnam:1,study:1,formline:1,endhostent:1,times:1,chop:1,length:1,gethostent:1,getnetent:1,pack:1,getprotoent:1,getservbyname:1,rand:1,mkdir:1,pos:1,chmod:1,y:1,substr:1,endnetent:1,printf:1,next:1,open:1,msgsnd:1,readdir:1,use:1,unlink:1,getsockopt:1,getpriority:1,rindex:1,wantarray:1,hex:1,system:1,getservbyport:1,endservent:1,"int":1,chr:1,untie:1,rmdir:1,prototype:1,tell:1,listen:1,fork:1,shmread:1,ucfirst:1,setprotoent:1,"else":1,sysseek:1,link:1,getgrgid:1,shmctl:1,waitpid:1,unpack:1,getnetbyname:1,reset:1,chdir:1,grep:1,split:1,require:1,caller:1,lcfirst:1,until:1,warn:1,"while":1,values:1,shift:1,telldir:1,getpwuid:1,my:1,getprotobynumber:1,"delete":1,and:1,sort:1,uc:1,defined:1,srand:1,accept:1,"package":1,seekdir:1,getprotobyname:1,semop:1,our:1,rename:1,seek:1,"if":1,q:1,chroot:1,sysread:1,setpwent:1,no:1,crypt:1,getc:1,chown:1,sqrt:1,write:1,setnetent:1,setpriority:1,foreach:1,tie:1,sin:1,msgget:1,map:1,stat:1,getlogin:1,unless:1,elsif:1,truncate:1,exec:1,keys:1,glob:1,tied:1,closedir:1,ioctl:1,socket:1,readlink:1,"eval":1,xor:1,readline:1,binmode:1,setservent:1,eof:1,ord:1,bind:1,alarm:1,pipe:1,atan2:1,getgrent:1,exp:1,time:1,push:1,setgrent:1,gt:1,lt:1,or:1,ne:1,m:1};var d={cN:"subst",b:"[$@]\\{",e:"}",k:c,r:10};var b={cN:"variable",b:"\\$\\d"};var a={cN:"variable",b:"[\\$\\%\\@\\*](\\^\\w\\b|#\\w+(\\:\\:\\w+)*|[^\\s\\w{]|{\\w+}|\\w+(\\:\\:\\w*)*)"};var g=[hljs.BE,d,b,a];var f={b:"->",c:[{b:hljs.IR},{b:"{",e:"}"}]};var e=[b,a,hljs.HCM,{cN:"comment",b:"^(__END__|__DATA__)",e:"\\n$",r:5},f,{cN:"string",b:"q[qwxr]?\\s*\\(",e:"\\)",c:g,r:5},{cN:"string",b:"q[qwxr]?\\s*\\[",e:"\\]",c:g,r:5},{cN:"string",b:"q[qwxr]?\\s*\\{",e:"\\}",c:g,r:5},{cN:"string",b:"q[qwxr]?\\s*\\|",e:"\\|",c:g,r:5},{cN:"string",b:"q[qwxr]?\\s*\\<",e:"\\>",c:g,r:5},{cN:"string",b:"qw\\s+q",e:"q",c:g,r:5},{cN:"string",b:"'",e:"'",c:[hljs.BE],r:0},{cN:"string",b:'"',e:'"',c:g,r:0},{cN:"string",b:"`",e:"`",c:[hljs.BE]},{cN:"string",b:"{\\w+}",r:0},{cN:"string",b:"-?\\w+\\s*\\=\\>",r:0},{cN:"number",b:"(\\b0[0-7_]+)|(\\b0x[0-9a-fA-F_]+)|(\\b[1-9][0-9_]*(\\.[0-9_]+)?)|[0_]\\b",r:0},{cN:"regexp",b:"(s|tr|y)/(\\\\.|[^/])*/(\\\\.|[^/])*/[a-z]*",r:10},{cN:"regexp",b:"(m|qr)?/",e:"/[a-z]*",c:[hljs.BE],r:0},{cN:"sub",b:"\\bsub\\b",e:"(\\s*\\(.*?\\))?[;{]",k:{sub:1},r:5},{cN:"operator",b:"-\\w\\b",r:0},{cN:"pod",b:"\\=\\w",e:"\\=cut"}];d.c=e;f.c[1].c=e;return{dM:{k:c,c:e}}}();hljs.LANGUAGES.cpp=function(){var b={keyword:{"false":1,"int":1,"float":1,"while":1,"private":1,"char":1,"catch":1,"export":1,virtual:1,operator:2,sizeof:2,dynamic_cast:2,typedef:2,const_cast:2,"const":1,struct:1,"for":1,static_cast:2,union:1,namespace:1,unsigned:1,"long":1,"throw":1,"volatile":2,"static":1,"protected":1,bool:1,template:1,mutable:1,"if":1,"public":1,friend:2,"do":1,"return":1,"goto":1,auto:1,"void":2,"enum":1,"else":1,"break":1,"new":1,extern:1,using:1,"true":1,"class":1,asm:1,"case":1,typeid:1,"short":1,reinterpret_cast:2,"default":1,"double":1,register:1,explicit:1,signed:1,typename:1,"try":1,"this":1,"switch":1,"continue":1,wchar_t:1,inline:1,"delete":1,alignof:1,char16_t:1,char32_t:1,constexpr:1,decltype:1,noexcept:1,nullptr:1,static_assert:1,thread_local:1},built_in:{std:1,string:1,cin:1,cout:1,cerr:1,clog:1,stringstream:1,istringstream:1,ostringstream:1,auto_ptr:1,deque:1,list:1,queue:1,stack:1,vector:1,map:1,set:1,bitset:1,multiset:1,multimap:1,unordered_set:1,unordered_map:1,unordered_multiset:1,unordered_multimap:1,array:1,shared_ptr:1}};var a={cN:"stl_container",b:"\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<",e:">",k:b,r:10};a.c=[a];return{dM:{k:b,i:"</",c:[hljs.CLCM,hljs.CBLCLM,hljs.QSM,{cN:"string",b:"'",e:"[^\\\\]'",i:"[^\\\\][^']"},hljs.CNM,{cN:"preprocessor",b:"#",e:"$"},a]}}}();</script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+    </div>
+</body>
+</html>
