@@ -127,7 +127,7 @@ int main()
   run_experiment(&points, &quadrants, &counts_per_quadrant);
 
   int expected_count_per_quadrant = num_points / 4;
-  int tolerance = expected_count_per_quadrant / 1000;
+  int tolerance = sqrtf(expected_count_per_quadrant) * 5;
   for(int i = 0; i < 4; ++i)
   {
     assert(abs(expected_count_per_quadrant - counts_per_quadrant[i]) < tolerance);
