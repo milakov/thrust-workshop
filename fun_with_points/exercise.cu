@@ -65,8 +65,8 @@ void count_points_in_quadrants(std::vector<int> &quadrants, std::vector<int> &co
 {
   // sequentially compute a histogram
   std::cout << "TODO: parallelize this loop by" << std::endl;
-  std::cout << "   1. sorting quadrant labels by quadrant" << std::endl;
-  std::cout << "   2. reducing quadrant labels by quadrant\n" << std::endl;
+  std::cout << "   1. sorting quadrant numbers" << std::endl;
+  std::cout << "   2. reducing quadrant numbers by quadrant\n" << std::endl;
   for(int i = 0; i < quadrants.size(); ++i)
   {
     int q = quadrants[i];
