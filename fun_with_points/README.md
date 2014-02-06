@@ -1,10 +1,10 @@
-TL;DR
+Setup
 =====
 
 Building __parallel programs__ is easy with [Thrust's](http://thrust.github.com) __power tools__ like parallel __maps__, __sorts__, and __reductions__.
 
 ```bash
-$ git clone -b gtc2013 git://github.com/tmjbradley/thrust-workshop
+$ git clone git://github.com/mmilakov/thrust-workshop
 $ cd thrust-workshop/fun_with_points
 $ make
 $ ./exercise
