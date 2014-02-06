@@ -61,12 +61,12 @@ void classify_points_by_quadrant(const std::vector<float2> &points, float2 centr
 }
 
 
-void count_points_in_quadrants(std::vector<float2> &points, std::vector<int> &quadrants, std::vector<int> &counts_per_quadrant)
+void count_points_in_quadrants(std::vector<int> &quadrants, std::vector<int> &counts_per_quadrant)
 {
   // sequentially compute a histogram
   std::cout << "TODO: parallelize this loop by" << std::endl;
-  std::cout << "   1. sorting points by quadrant" << std::endl;
-  std::cout << "   2. reducing points by quadrant\n" << std::endl;
+  std::cout << "   1. sorting quadrant labels by quadrant" << std::endl;
+  std::cout << "   2. reducing quadrant labels by quadrant\n" << std::endl;
   for(int i = 0; i < quadrants.size(); ++i)
   {
     int q = quadrants[i];
@@ -100,7 +100,7 @@ int main()
 
   std::cout << "TODO: move these counts to the GPU using thrust::device_vector\n" << std::endl;
   std::vector<int> counts_per_quadrant(4);
-  count_points_in_quadrants(points, quadrants, counts_per_quadrant);
+  count_points_in_quadrants(quadrants, counts_per_quadrant);
 
   std::cout << "Per-quadrant counts:" << std::endl;
   std::cout << "  Bottom-left : " << counts_per_quadrant[0] << " points" << std::endl;

@@ -221,9 +221,9 @@ We're almost done. The last thing we need to do is answer is our original burnin
 
 When we have a set of buckets (quadrants) and we want to count how many things (points) fall in each, we sometimes say we want to compute a __histogram__. 
 
-The sequential code counts up the points by looping over them and incrementing a counter in each bucket:
+The sequential code counts up the quadrant numbers by looping over them and incrementing a counter in each bucket:
 
-    void count_points_in_quadrants(std::vector<float2> &points, std::vector<int> &quadrants,
+    void count_points_in_quadrants(std::vector<int> &quadrants,
                                    std::vector<int> &counts_per_quadrant)
     {
       // sequentially compute a histogram
@@ -238,23 +238,23 @@ The sequential code counts up the points by looping over them and incrementing a
 
 Hmm... there's that __shared state__ problem again. The iterations of this loop __depend__ on each other, because we expect many points to fall into the same quadrant and __contend__ to increment the same counter. If we tried to perform all these increments at once in parallel with an algorithm like `transform`, they would all run into each other! We'll have to figure out a different way to build this histogram.
 
-You may notice that our `count_points_in_quadrants` function takes `points` as a parameter, but it doesn't do anything with them. That's a hint that to parallelize this operation, we'll need to think about __reorganizing__ our input data to make our job easier.
+We need to __reorganize__ our input data to make our job easier.
 
-This problem of counting up a collection of items might remind you of our earlier use of `reduce`. Like before, we have a collection of things (points in a quadrant) and we want to reduce them to a single thing (the number of points in each quadrant).
+This problem of counting up a collection of items might remind you of our earlier use of `reduce`. Like before, we have a collection of things (quadrant numbers) and we want to reduce them to a single thing (the number of points in each quadrant).
 
 But it doesn't make sense to just call `reduce` again -- it seems like `reduce` could only count up the number of points in a single quadrant. So we'd have to call `reduce` several times -- once for each quadrant. But how do we find the points associated with a particular quadrant and pick them out for `reduce`?
 
-It turns out if we're willing to __sort__ our data, we can bring all the points from a particular quadrant together so that we can __reduce__ them all at once. We call this kind of operation __sorting by key__ because we're sorting a collection of things (points) by a key (quadrant number) associated with each of them.
+It turns out if we're willing to __sort__ our data, we can bring all the points from a particular quadrant together so that we can __reduce__ them all at once.
 
-This is super easy with the `sort_by_key` algorithm:
+This is super easy with the `sort` algorithm:
 
-    thrust::sort_by_key(quadrants.begin(), quadrants.end(), points.begin());
+    thrust::sort(quadrants.begin(), quadrants.end());
 
-Here, we're telling Thrust to consider all the quadrant numbers from `begin` to `end` as sorting keys for the points beginning at `points.begin()`. Afterwards, both collections will be sorted according to the keys.
+Here, we're telling Thrust to sort all the quadrant numbers from `begin` to `end`.
 
-So now our points are sorted, but so what? How does sorting help us count them? How do we use `reduce`?
+So now our quadrant numbers are sorted, but so what? How does sorting help us count them? How do we use `reduce`?
 
-Since by sorting we've brought all of the things (points) with the same key (quadrant number) together, we can do a special kind of __reducing by key__ operation to count them all at once:
+Since by sorting we've brought all the same quadrant numberss together, we can do a special kind of __reducing by key__ operation to count them all at once:
 
     thrust::reduce_by_key(quadrants.begin(), quadrants.end(),
                           thrust::constant_iterator<int>(1),
@@ -265,7 +265,7 @@ Whoa... what just happened?
 
 Let's break it down piece by piece:
 
-Like `sort_by_key`, `reduce_by_key` takes a collection of __keys__:
+`reduce_by_key` takes a collection of __keys__:
 
     quadrants.begin(), quadrants.end() // The key is the quadrant number again.
 
@@ -287,11 +287,11 @@ Just like `reduce`, `reduce_by_key`'s default reduction is a sum. So for each ke
 
 Here's the whole function:
 
-    void count_points_in_quadrants(std::vector<float2> &points, std::vector<int> &quadrants,
+    void count_points_in_quadrants(std::vector<int> &quadrants,
                                    std::vector<int> &counts_per_quadrant)
     {
-      // sort points by quadrant
-      thrust::sort_by_key(quadrants.begin(), quadrants.end(), points.begin());
+      // sort quadrant numbers
+      thrust::sort(quadrants.begin(), quadrants.end());
     
       // count points in each quadrant
       thrust::reduce_by_key(quadrants.begin(), quadrants.end(),

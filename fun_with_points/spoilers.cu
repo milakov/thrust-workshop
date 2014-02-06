@@ -82,12 +82,12 @@ void classify_points_by_quadrant(const thrust::device_vector<float2> &points, fl
 }
 
 
-void count_points_in_quadrants(thrust::device_vector<float2> &points, thrust::device_vector<int> &quadrants, thrust::device_vector<int> &counts_per_quadrant)
+void count_points_in_quadrants(thrust::device_vector<int> &quadrants, thrust::device_vector<int> &counts_per_quadrant)
 {
-  // sort points by quadrant
-  thrust::sort_by_key(quadrants.begin(), quadrants.end(), points.begin());
+  // sort quadrant numbers
+  thrust::sort(quadrants.begin(), quadrants.end());
 
-  // count points in each quadrant
+  // count labels in each quadrant
   thrust::reduce_by_key(quadrants.begin(), quadrants.end(),
                         thrust::constant_iterator<int>(1),
                         thrust::discard_iterator<>(),
@@ -115,7 +115,7 @@ int main()
   classify_points_by_quadrant(points, centroid, quadrants);
 
   thrust::device_vector<int> counts_per_quadrant(4);
-  count_points_in_quadrants(points, quadrants, counts_per_quadrant);
+  count_points_in_quadrants(quadrants, counts_per_quadrant);
 
   std::cout << "Per-quadrant counts:" << std::endl;
   std::cout << "  Bottom-left : " << counts_per_quadrant[0] << " points" << std::endl;
