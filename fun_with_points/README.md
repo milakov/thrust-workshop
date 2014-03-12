@@ -205,9 +205,9 @@ With Thrust, we can compute parallel map operations using `transform` (`map` mea
       }
     };
     
-    void classify_points_by_quadrant(const std::vector<float2> &points, float2 center, std::vector<int> &quadrants)
+    void classify_points_by_quadrant(const std::vector<float2> &points, float2 centroid, std::vector<int> &quadrants)
     {
-      thrust::transform(points.begin(), points.end(), quadrants.begin(), classify_point(center));
+      thrust::transform(points.begin(), points.end(), quadrants.begin(), classify_point(centroid));
     }
 
 `transform` works kind of like `tabulate`, but instead of automatically generating a series of integer indices for us, `transform` passes each point from `begin` to `end` to our `classify_point` function object.
