@@ -11,6 +11,28 @@ float2 operator+(float2 a, float2 b)
 }
 
 
+// given an integer, output a pseudorandom 2D point
+struct random_point
+{
+  __host__ __device__ unsigned int hash(unsigned int x)
+  {
+    x = (x+0x7ed55d16) + (x<<12);
+    x = (x^0xc761c23c) ^ (x>>19);
+    x = (x+0x165667b1) + (x<<5);
+    x = (x+0xd3a2646c) ^ (x<<9);
+    x = (x+0xfd7046c5) + (x<<3);
+    x = (x^0xb55a4f09) ^ (x>>16);
+    return x;
+  }
+
+  __host__ __device__
+  float2 operator()(unsigned int x)
+  {
+    return make_float2(float(hash(x)) / UINT_MAX, float(hash(2 * x)) / UINT_MAX);
+  }
+};
+
+
 void generate_random_points(std::vector<float2> &points)
 {
   // sequentially generate some random 2D points in the unit square
