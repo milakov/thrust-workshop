@@ -8,7 +8,6 @@ $ git clone git://github.com/mmilakov/thrust-workshop
 $ cd thrust-workshop/fun_with_points
 $ make
 $ ./exercise
-$ ./spoilers
 ```
 
 Fun with Points!
@@ -319,7 +318,7 @@ Performance
 Now it's time to find out if all our hard work was worth it. [`performance.cu`](performance.cu) provides an instrumented version of the solution we can use for measuring its performance. Since we've built our solution using `thrust::device_vector`, it's easy to switch between building a program which targets the CPU or the GPU on the command line:
 
     # build the cpu solution
-    $ scons cpu_performance
+    $ make cpu_performance
     $ ./cpu_performance 
     Warming up...
     
@@ -328,7 +327,7 @@ Now it's time to find out if all our hard work was worth it. [`performance.cu`](
     20.5157 megapoints generated and counted per second.
 
     # build the cpu solution
-    $ scons gpu_performance
+    $ make gpu_performance
     $ ./gpu_performance 
     Warming up...
     
