@@ -64,6 +64,25 @@ float2 compute_centroid(const std::vector<float2> &points)
 }
 
 
+// given a 2D point, return which quadrant it is in
+struct classify_point
+{
+  float2 center;
+
+  __host__ __device__
+  classify_point(float2 c)
+  {
+    center = c;
+  }
+
+  __host__ __device__
+  unsigned int operator()(float2 p)
+  {
+    return (p.x <= center.x ? 0 : 1) | (p.y <= center.y ? 0 : 2);
+  }
+};
+
+
 void classify_points_by_quadrant(const std::vector<float2> &points, float2 centroid, std::vector<int> &quadrants)
 {
   // classify each point relative to the centroid
